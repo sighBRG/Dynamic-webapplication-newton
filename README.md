@@ -17,7 +17,7 @@ ambiance where employers can easily read about candidates and hopefully take con
            - Titles: Didot \
            - Content: Liberation Mono \
            - Navigation Bar: Didot \
-Reason behind the chosen fonts is to convey confidence and trust.
+The above chosen fonts are said to convey confidence and trust.
 ## Getting Started
 ### Install
 - [Visual Studio (Optional)](https://code.visualstudio.com/download)
