@@ -1,2 +1,2 @@
-# Dynamic-webbapplication-newton
+# Dynamic-webapplication-newton
 Webbapplikation - Projekt: Dynamisk Webbsida
