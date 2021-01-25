@@ -14,9 +14,9 @@ ambiance where employers can easily read about candidates and hopefully take con
 - Texture: three-dimensional, modern and elaborate. 
 - Space: space between elements. This gives users room to focus on reading whilst inline with the minimalistic theme.
 - Typography: \
-           - Titles: Didot\
-           - Content: Courier New \
-           - Navigation Bar: Times New Roman \
+           - Titles: Didot \
+           - Content: Liberation Mono \
+           - Navigation Bar: Didot \
 Reason behind the chosen fonts is to install confidence and trust.
 ## Getting Started
 ### Install
