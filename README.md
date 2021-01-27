@@ -23,7 +23,8 @@ ambiance where employers can easily read about candidates and hopefully take con
            - Navigation Bar: Didot \
 The above chosen fonts are said to convey confidence and trust.
 ## Mockup
-- Link to mockup: https://drive.google.com/file/d/1MaakjMXzhUWSPIMKIFtP4U9GX2zxzm_e/view
+- Link to Mockup V1.0: https://drive.google.com/file/d/1MaakjMXzhUWSPIMKIFtP4U9GX2zxzm_e/view
+- Mockup continously updated: https://www.figma.com/file/SaZtrz1WnpwcZ8cEXjVp1l/Dynamisk-webbapplikation?node-id=0%3A1
 ## Getting Started
 ### Install
 - [Visual Studio (Optional)](https://code.visualstudio.com/download)
