@@ -9,7 +9,11 @@ The platform should give employee seekers a sense of confidence. It is commun th
 navigate through, so it should be user friendly as well. The choice of graphical components below is aimed to host a calm 
 ambiance where employers can easily read about candidates and hopefully take contact.
 
-- Color: cool colors, no clashing colors. Reason being it creates a minimalistic effect.
+- Color: cool colors, no clashing colors. Reason being it creates a minimalistic effect. 
+- Chosen colors: \
+           - Turqoise \
+           - Dark Grey \
+           - White 
 - Line: thin and elegant. Because it fits with the color scheme and the minimalistic theme.
 - Texture: three-dimensional, modern and elaborate. 
 - Space: space between elements. This gives users room to focus on reading whilst inline with the minimalistic theme.
@@ -18,6 +22,8 @@ ambiance where employers can easily read about candidates and hopefully take con
            - Content: Liberation Mono \
            - Navigation Bar: Didot \
 The above chosen fonts are said to convey confidence and trust.
+## Mockup
+- Link to mockup: https://drive.google.com/file/d/1MaakjMXzhUWSPIMKIFtP4U9GX2zxzm_e/view
 ## Getting Started
 ### Install
 - [Visual Studio (Optional)](https://code.visualstudio.com/download)
