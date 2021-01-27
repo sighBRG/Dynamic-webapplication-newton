@@ -7,13 +7,14 @@ body {
     background-color: white;
     background-image: url("../img/background.png");
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: Unicorn;
     color: rgb(77, 77, 77);
 }
 
 p {
     color: rgb(77, 77, 77);
-    size: 14px;
+    size: 20px;
     align-self: center;  
 }
 
@@ -23,32 +24,72 @@ h5 {
     align-self: center;    
 }
 
+.navbar {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 99%;
+  transition: top 0.5s;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(77, 77, 77);
+  text-align: center;
+  size: 20px;
+  padding: 25px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
 .flex-container {
     display: flex;
-    align-self:center;
+    align-self: center;
     flex-direction: column;
-    background-color: white;
-    font-size: 12px;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    font-size: 16px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2px;
   }
  
   .flex-container-picture-top {
     align-self: center;
-    width: 200px;
-    height: 200px;
   }
 
   .flex-container-picture-top img {
-    align-self: center;
+    padding: 50px;
     max-height: 200px;
     max-width: 200px;
   }
 
+  .flex-container-headline-border {
+    width: 200px;
+    height: 50px;
+    background-image: url("../img/headline-bg.jpg");
+    align-self: center;
+    background-repeat: no-repeat;
+  }
+
+  .flex-container-row-could {
+    width: fit-content;
+    flex-direction: column;
+    display: flex;
+    background-image: url("../img/bg-cloud.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
   .flex-container-row {
-    background-color: white;
     width: 85%;
     flex-direction: row;
     display: flex;
@@ -62,26 +103,6 @@ h5 {
     text-align: center;
     font-size: 30px;
   }
-
-  .flex-container-headline-border {
-    width: 85%;
-    height: 50px;
-    padding-bottom: 15px;
-    background-image: url("../img/headline-bg.jpg");
-    align-self: center;
-    text-align: center;
-    background-repeat: repeat-x;
-    font-size: 30px;
-  }
-  .flex-container-headline-border {
-    width: 85%;
-    padding-bottom: 15px;
-    background-image: url("../img/headline-bg.jpg");
-    align-self: center;
-    text-align: center;
-    background-repeat: repeat-x;
-    font-size: 30px;
-  }
  
   .flex-container-text {
     background-color: white;
@@ -93,12 +114,10 @@ h5 {
 
 
   .flex-container-right {
-    background-color: white;
     align-self: flex-end;
   }
 
   .flex-container-right img{
-    background-color: white;
     max-width: 100%;
     min-width: 25%;
     max-height: 200px;
@@ -106,7 +125,6 @@ h5 {
   }
 
   .flex-container-picture {
-    background-color: white;;
     max-height: 200px;
     max-width: 140px;
     padding: 1rem;
@@ -136,15 +154,15 @@ h5 {
   
   .flex-container-text h1 {
     text-align: left;
-    font-size: 20px;
+    font-size: 24px;
   }
   .flex-container-text h2 {
     text-align: left;
-    font-size: 16px;
+    font-size: 22px;
   }
   
   .flex-container-text p {
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
   }
   
