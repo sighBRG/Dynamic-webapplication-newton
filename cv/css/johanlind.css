@@ -37,7 +37,7 @@ h5 {
   display: block;
   color: rgb(77, 77, 77);
   text-align: center;
-  size: 20px;
+  font-size: 20px;
   padding: 25px;
   text-decoration: none;
 }
@@ -56,6 +56,7 @@ h5 {
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 2px;
+    font-size: 20px;
   }
  
   .flex-container-picture-top {
