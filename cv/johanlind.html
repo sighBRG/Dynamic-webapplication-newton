@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/johanlind.css">
+    <script src="scripts/johanlindjs.js">    
+    </script>
+    
+<style>
+</style>
+</head>
+<body>
+    <section class="flex-container">
+        <p id="date"></p>
+        <h5 id="quote"></h5>
+            <section class="flex-container-headline">CV</section>
+            <section class="flex-container-row"> 
+                <section class="flex-container-picture">
+                    <img src="img/johanlind1.jpg">
+                </section>
+                <section class="flex-container-text">
+                    <h1>Kontaktinformation</h1>
+                    <h2>Namn: Johan Lind</h2>
+                    <h2>Adress: Hittepågatan 1</h2>
+                    <h2>Mobil: 073-6603111</h2>
+                    <h2>Epost: johanlind1984@gmail.com</h2>
+                </section>
+            </section>
+
+            <section class="flex-container-headline">Arbeslivserfarenhet</section>
+            <section class="flex-container-row">
+                <section class="flex-container-left-inline-small">
+                    <img src="img/lf.png">
+                </section>
+                <section class="flex-container-text">
+                    <h1>Länsförsäkringar Fastighetsförmedling - Fastighetsmäklare</h1>
+                    <h2>2018/06/13 - 2019/08/01</h2>
+                    <p>Nunc nisl nulla, accumsan id elit vel, lacinia sodales magna. Aenean sit amet diam 
+                        at magna mollis bibendum ac sed dui. Curabitur fermentum, ipsum ut dapibus malesuada, 
+                        tortor ante egestas nunc, at semper felis arcu eget arcu. Ut venenatis orci id 
+                        neque vestibulum gravida. Aliquam erat volutpat. Phasellus mollis mollis eros 
+                        sit amet vehicula. Fusce sit amet arcu ante. Fusce accumsan cursus posuere. 
+                        Fusce eu est id leo posuere volutpat eget ut felis. Nunc ex felis, pellentesque 
+                        nec laoreet tempus, consequat vitae enim. Integer elit quam, ultrices facilisis 
+                        odio eget, porta ullamcorper erat.</p>
+                </section>
+            </section>
+
+            <section class="flex-container-headline">Utbildning</section>
+            <section class="flex-container-row">
+                <section class="flex-container-left-inline-small">
+                    <img src="img/newton.png">
+                </section>
+                <section class="flex-container-text">
+                    <h1>Newton kompetensutveckling - Systemutvecklare</h1>
+                    <h2>2019/08/21 - 2020/08/30</h2>
+                    <p>Etiam leo nisi, imperdiet et turpis vel, ultricies lobortis mi. Vestibulum vel viverra 
+                        nibh. Vivamus eu dictum dolor, ac tristique ante. Vestibulum accumsan eget felis nec 
+                        faucibus. Integer vehicula augue vel elementum luctus. Duis vitae pulvinar lorem. 
+                        Suspendisse commodo pulvinar lectus, a euismod ipsum vulputate nec. Morbi efficitur 
+                        posuere faucibus. Pellentesque at luctus dui. Curabitur sed ipsum eros. Aliquam erat 
+                        volutpat</p>
+                </section>
+            </section>
+            <section class="flex-container-row">
+                <section class="flex-container-left-inline-small">
+                    <img src="img/hig.png">
+                </section>
+                <section class="flex-container-text">
+                    <h1>Högskolan i Gävle - Fatighetsmäklare</h1>
+                    <h2>2019/08/21 - 2020/08/30 </h2>
+                    <p>Mauris egestas dui eu nisi mattis, sed efficitur nunc mattis. Donec vel nisi aliquam velit 
+                        sodales tincidunt. Vivamus vel orci ac ante lacinia tincidunt sit amet congue mauris. 
+                        Aliquam mollis purus id suscipit rutrum. Fusce non porta quam, suscipit rhoncus velit. 
+                        Nulla fringilla ullamcorper orci, et laoreet quam commodo vel. Suspendisse potenti.
+                    </p>
+                </section>
+            </section>
+
+            <section class="flex-container-headline">Stack</section>
+            <section class="flex-container-row">
+                <section class="flex-container-left-inline-small">
+                    <img src="img/java.png">
+                </section>
+                <section class="flex-container-text">
+                    <h1>Java</h1>
+                    <p>Proin feugiat ultricies nunc, consectetur efficitur leo laoreet non. Integer interdum nibh 
+                        at arcu tincidunt blandit. Morbi sed mattis nunc. Suspendisse turpis lorem, efficitur non 
+                        quam ac, luctus egestas magna. Integer a elementum lacus. Cras eu magna enim. Vestibulum 
+                        suscipit viverra magna, vel dapibus sem tincidunt eu.
+                    </p>
+                </section>
+            </section>
+            <section class="flex-container-row">
+                <section class="flex-container-left-inline-small">
+                    <img src="img/spring-boot.png">
+                </section>
+                <section class="flex-container-text">
+                    <h1>Spring Boot</h1>
+                    <p>Cras vestibulum ex non ante vehicula imperdiet. Morbi iaculis iaculis ipsum, ut tempus
+                     dolor venenatis eget. Mauris at arcu elit. Donec et blandit ipsum. Donec blandit nisl sit 
+                     amet mi hendrerit consectetur. Integer leo velit, sodales at sodales interdum, tincidunt 
+                     vel mauris. Praesent sit amet dolor est. Aliquam consequat pellentesque arcu, a iaculis lacus posuere sit amet. Sed id dapibus ipsum.
+                    </p>
+                </section>
+            </section>
+
+
+    </section>
+
+    <script>
+        document.getElementById("date").innerHTML = getDate();
+        document.getElementById("quote").innerHTML = getRandomQuote();
+    </script>
+</body>
+</html>

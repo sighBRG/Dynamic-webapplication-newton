@@ -1,0 +1,99 @@
+body {
+    background-color: #fcf8e8;
+}
+
+p {
+    color: black;
+    size: 14px;
+    align-self: center;    
+}
+
+h5 {
+    color: black;
+    size: 24px;
+    align-self: center;    
+}
+
+.flex-container {
+    display: flex;
+    width: 85%;
+    align-self: center;
+    flex-direction: column;
+    background-color: #fcf8e8;
+    font-size: 12px;
+    margin: 10px
+  }
+  
+  .flex-container-row {
+    background-color: #d4e2d4;
+    width: 85%;
+    flex-direction: row;
+    display: flex;
+    align-self: center;
+    align-items: left;
+  }
+  
+  .flex-container-headline {
+    background-color: #ecb390;
+    width: 85%;
+    padding-top: 20px;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .flex-container-text {
+    background-color: #d4e2d4;
+    text-align: left;
+    padding: 1rem;
+    height: 100%;
+    width: 85%;
+  }
+  
+  .flex-container-picture {
+    background-color: #d4e2d4;;
+    max-height: 200px;
+    max-width: 140px;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  
+  .flex-container-picture img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+  }
+  
+  .flex-container-left-inline-small {
+    background-color: #d4e2d4;
+    padding: 1rem;
+    max-width: 10%;
+    height: 100%;
+    margin: 1rem;
+  }
+  
+  .flex-container-left-inline-small img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+  }
+  
+  .flex-container-text h1 {
+    text-align: left;
+    font-size: 14px;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .flex-container-text h2 {
+    text-align: left;
+    font-size: 12px;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .flex-container-text p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
