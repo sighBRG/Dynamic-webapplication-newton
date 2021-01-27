@@ -5,9 +5,9 @@ Web application - Project: Dynamic Webpage
 Dynamic web application is a platform for employers to seek and learn about students of software development. 
 It is also an open portal for students through which they can add their resume and be exposed to employers. 
 ## Graphical Profile
-The platform should give employee seekers a sense of confidence. It is commun that job matching platforms are easy to 
+The platform should give the employers a sense of confidence. It is common that job matching platforms are easy to 
 navigate through, so it should be user friendly as well. The choice of graphical components below is aimed to host a calm 
-ambiance where employers can easily read about candidates and hopefully take contact.
+ambiance where employers can easily read about candidates and hopefully take the next step and contact the candidates.
 - Chosen colors: \
            - Turqoise \
            - Dark Grey \
