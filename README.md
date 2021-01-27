@@ -1,5 +1,5 @@
 # Dynamic-webapplication-newton
-Webapplication - Project: Dynamic Webpage
+Web application - Project: Dynamic Webpage
 
 ## Description
 Dynamic web application is a platform for employers to seek and learn about students of software development. 
