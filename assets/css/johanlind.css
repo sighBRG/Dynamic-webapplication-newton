@@ -1,6 +1,6 @@
 @font-face {
   font-family: Unicorn;
-  src: url("../font/GoodUnicornTTF.ttf");
+  src: url("../fonts/GoodUnicornTTF.ttf");
 }
 
 @keyframes MoveUpDown {
@@ -84,7 +84,7 @@ h5 {
   .flex-container-headline-border {
     width: 200px;
     height: 50px;
-    background-image: url("../img/headline-bg.jpg");
+    background-image: url("../images/johancv/headline-bg.jpg");
     align-self: center;
     background-repeat: no-repeat;
   }
@@ -93,7 +93,7 @@ h5 {
     width: fit-content;
     flex-direction: column;
     display: flex;
-    background-image: url("../img/bg-cloud.png");
+    background-image: url("../images/johancv/bg-cloud.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-top: 50px;
