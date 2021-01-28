@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 .container {
     position:fixed;
     padding:0;
@@ -5,19 +8,31 @@
     top:0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     background:rgba(91, 109, 126, 0.404);
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-        ". intro intro"
+        ". image contactinfo"
         "menu text text"
         "menu text text";
 }
 
-.intro{
-    grid-area: intro;
+img, .contactinfo{
+    max-width:100%;
+    height:auto;
+    max-height:100%;
+}
+img{
+    grid-area: image;
+    min-width: 240px;
+    min-height: 180px;
+}
+.contactinfo{
+    grid-area: contactinfo;
+    margin: auto;
+    margin-left: 0;
 }
 
 .menu{
