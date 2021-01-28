@@ -5,7 +5,4 @@ function displayElement(element){
     }
     let textSection = document.getElementById(element);
     textSection.style.display = 'block';
-    let button = document.getElementById("menuButton2");
-    button.style.background = '1b9bff';
-    button.style.transition = '.5s';
 }
