@@ -5,12 +5,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/dannykalosportfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Danny Kalos</title>
 </head>
 <body>
     <div class="container">
-        <img src="assets/images/dannykalos.png" alt="image"/>
+        <img src="assets/images/dannycv/dannykalos.png" alt="image"/>
         <div class="contactinfo">
             <section class="mobile">
                 <span id = "icon" class="fa fa-phone"></span> 
@@ -31,16 +31,67 @@
         </div>
         <nav>
             <ul>
-                <li><a class="active" href="#">Om mig</a></li>
-                <li><a href="#">Utbildning</a></li>
-                <li><a href="#">Arbetsliverfaenhet</a></li>
-                <li><a href="#">IT-kunskaper</a></li>    
-                <li><a href="#">IT-projekt</a></li>
-                <li><a href="#">Språk</a></li>    
-                <li><a href="#">Referenser</a></li>
+                <li><a id="menuButton1" class="active" href="#" onclick="displayElement('text-section1')">Om mig</a></li>
+                <li><a id="menuButton1" href="#" onclick="displayElement('text-section2')">Utbildning</a></li>
+                <li><a id="menuButton1" href="#" onclick="displayElement('text-section3')">Arbetsliverfaenhet</a></li>
+                <li><a id="menuButton1" href="#" onclick="displayElement('text-section4')">IT-kunskaper</a></li>    
+                <li><a id="menuButton1" href="#" onclick="displayElement('text-section5')">IT-projekt</a></li>
+                <li><a id="menuButton1" href="#" onclick="displayElement('text-section6')">Språk</a></li>    
+                <li><a id="menuButton1" href="#" onclick="displayElement('text-section7')">Referenser</a></li>
             </ul>
         </nav>
-        <section class="text"></section>
+        <div class="text">
+            <section id="text-section1" class="text-section1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et porta nisl. Aenean maximus erat eu finibus tempor. Duis eu porttitor ligula. Aliquam mattis urna vitae enim ultricies, sagittis varius justo ornare. Curabitur lorem lorem, ullamcorper sit amet laoreet non, faucibus in lorem. Phasellus a ex suscipit, semper est quis, vestibulum metus. Curabitur sit amet accumsan eros. Aenean faucibus dui vel tortor consectetur hendrerit. Curabitur ornare condimentum nulla eu tempus. Aliquam erat volutpat. Nulla sed magna convallis, rutrum nisl sit amet, mattis erat. Suspendisse mollis pulvinar sapien, eu iaculis lacus congue in. Aenean ultrices urna eu felis feugiat porta. Maecenas libero purus, iaculis at luctus ac, varius in felis.</section>
+            <section id="text-section2" class="text-section2">Systemutveckling inom Java (Yh-utbildning), 400 poäng,
+                Newton Yrkeshögskola, 2019 – pågående
+                Utbildningen är framtagen i nära samarbete med IT-branschen och syftar till att ge en bred kompetens för att kunna arbeta som programmerare i teammiljö
+                Utbildningen är 4 terminer lång
+                En tredjedel av utbildningen är praktik på företag i IT-branschen
+                I utbildningen ingår kurser inom områdena objektorienterad programmering, testning, agil systemutveckling, utveckling av webbapplikationer, entreprenörskap, färdighetsträning, ledarskap och kommunikation
+                
+                Revisor (Universitet-utbildning), 180 poäng,
+                The Lebanese University of Business, 2005 – 2008
+                Utbildningen fokuserade endast på företagsekonomi, emellertid handlade vissa kurser bland annat om ekonomi, finansmatte, juridik, marknadsföring och konsumtion
+                Utbildning är oavslutad. Jag har en hängande kurs kvar vilken utgör 3 poäng.
+                Examenprojektet är slutfört.
+                
+                
+                Ekonomi och sociologi (Gymnasie ), Sen El Fil Gymnasiet, 2004
+                3 årsutbildning
+                Första året är allmänt och de andra 2 år är linje utbildning
+                </section>
+            <section id="text-section3" class="text-section3">Logistiker, Hisselektronik, 2017/12 - nuvarande
+                Hantera inleverans och utleverans, tar emot inleverans och boka transport för utleverans
+                Avstämma med produktionen enligt prioritering
+                Kunskap inom företagsystemet Monitor
+                Hantera lager, skapa, planera och spara plats effektivt
+                Sammarbeta i teamet för att nå bästa resultat
+                Kundservice och kontakt med olika transportbolag
+                
+                Byggarbetare, Sthlm riv & bemanning, 2017/05 - 2017/12 
+                Arbetsledare på olika arbetsplatser 
+                Planera arbetet på ett säkert sätt 
+                Leverera i god tid 
+                Arbetsuppgifterna kan innebära kunskap inom snickeri, rivning och renovering
+                
+                Försäljare/ Kundsupporter, Zeus Telecom, 2012/06 – 2016/09
+                Sälja telecom applikationer till olika privata företag samt privata personer
+                Möta, hjälpa och träna kunder
+                
+                
+                Kundservis/ kassör,Money Transfer, 2009/06 – 2012/04
+                Kassör, kundservice och rösträknare
+                Skicka och ta emot pengar 
+                Växla pengar i olika valutor
+                </section>
+            <section id="text-section4" class="text-section4">Kunskaper inom Java (Swing, JavaFX, Spring Framework, MySQL och GitHub</section>
+            <section id="text-section5" class="text-section5"></section>
+            <section id="text-section6" class="text-section6">Engelska, Svenska, Franska, Standard Arabiska och Libanesiska (flytande i både tal och skrift).</section>
+            <section id="text-section7" class="text-section7"></section>
+        </div>
     </div>
 </body>
+<footer>
+    <script src="assets/scripts/dannykalosportfolio.js"></script> 
+</footer>
 </html>

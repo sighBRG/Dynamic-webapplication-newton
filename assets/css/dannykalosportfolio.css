@@ -36,7 +36,9 @@ img{
 }
 
 .text{
-    grid-area: text;;
+    margin-top: 5%;
+    margin-right: 30%;
+    grid-area: text;
 }
 
 nav{
@@ -63,4 +65,10 @@ nav ul li a{
 a.active,a:hover{
     background: #1b9bff;
     transition: .5s;
+}
+
+#text-section1, .text-section2, .text-section3, 
+.text-section4, .text-section5, 
+.text-section6, .text-section7{
+    display: none;
 }
