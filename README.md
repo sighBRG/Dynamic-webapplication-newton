@@ -30,7 +30,7 @@ The above chosen fonts are said to convey confidence and trust.
 - Each member has an individual portfolio (CV) page to create. 
 - Each member are also given the task to create a news page with grid/flexbox. 
 ## Planning
-- We use [(Trello)](https://trello.com/b/nnXKofBo/webbapplikation-projekt)
+- We use [Trello](https://trello.com/b/nnXKofBo/webbapplikation-projekt)
 ## Getting Started
 ## Install
 - [Visual Studio (Optional)](https://code.visualstudio.com/download)
