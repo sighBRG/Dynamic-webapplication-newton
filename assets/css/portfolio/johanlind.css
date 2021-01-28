@@ -64,8 +64,9 @@ h5 {
 }
 
 .navbar a:hover {
-  background-image: url("../../images/johancv/macarone.png");
+  background-image: url("../../images/johancv/cloud-menu-choice.png");
   background-repeat: no-repeat;
+  background-size: contain;
   color: black;
 }
 .flex-container {
