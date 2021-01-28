@@ -44,7 +44,7 @@ input[type=checkbox]:checked ~ div.door-section-left {
     transform: translateX(0);
 }
 
-/* Slide the second panel in */
+
 input[type=checkbox]:checked ~ div.door-section-right {
     transform: translateX(0);
 }
