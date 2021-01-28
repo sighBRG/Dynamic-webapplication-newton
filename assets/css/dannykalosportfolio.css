@@ -1,0 +1,33 @@
+.container {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(91, 109, 126, 0.404);
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-areas: 
+        ". intro intro"
+        "menu text text"
+        "menu text text";
+}
+
+img{
+    background-color: transparent;
+}
+
+.intro{
+    grid-area: intro;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.text{
+    grid-area: text;;
+}
