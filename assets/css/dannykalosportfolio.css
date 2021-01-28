@@ -35,10 +35,32 @@ img{
     margin-left: 0;
 }
 
-.menu{
-    grid-area: menu;
-}
-
 .text{
     grid-area: text;;
+}
+
+nav{
+    grid-area: menu;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul{
+    float: none;
+    margin-right: 20px;
+}
+
+nav ul li{
+    line-height: 55px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
 }
