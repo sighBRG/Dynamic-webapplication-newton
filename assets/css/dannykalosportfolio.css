@@ -16,10 +16,6 @@
         "menu text text";
 }
 
-img{
-    background-color: transparent;
-}
-
 .intro{
     grid-area: intro;
 }
