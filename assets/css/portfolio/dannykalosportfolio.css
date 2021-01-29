@@ -36,7 +36,7 @@ img{
 }
 
 .text{
-    margin-top: 5%;
+    margin-top: 3%;
     margin-right: 30%;
     grid-area: text;
 }
@@ -67,7 +67,7 @@ a.active,a:hover{
     transition: .5s;
 }
 
-#text-section1, .text-section2, .text-section3, 
+.text-section2, .text-section3, 
 .text-section4, .text-section5, 
 .text-section6, .text-section7{
     display: none;
