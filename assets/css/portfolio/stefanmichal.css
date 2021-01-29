@@ -137,6 +137,14 @@ h1 {
     background-color: #fafafa;
 }
 
+.point-to-other-direction {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 @media screen and (min-width: 1200px) {
     #container,
     #container3,
@@ -152,12 +160,6 @@ h1 {
         left: 45%;
         margin-top: 17%;
         min-width: 50%;
-
-    }
-
-    .arrow-down img {
-        margin-top: -4vh;
-        margin-left: -5.5vh;
 
     }
 }
@@ -180,18 +182,11 @@ h1 {
         left: 35%;
     }
 
-
     .heading-box {
         left: 40%;
         margin-top: 20%;
         width: 62%;
     }
-
-    .arrow-down img {
-        margin-top: -4vh;
-        margin-left: -5.5vh;
-    }
-
 }
 
 @media screen and (max-width: 960px) and (min-width: 768px) {
@@ -211,16 +206,10 @@ h1 {
         left: 20%;
     }
 
-
     .heading-box {
         margin-left: -36%;
         margin-top: 25%;
         min-width: 80%;
-    }
-
-    .arrow-down img {
-        margin-top: -4vh;
-        margin-left: -5.5vh;
     }
 }
 
@@ -243,10 +232,6 @@ h1 {
         min-width: 90%;
     }
 
-    .arrow-down img {
-        margin-top: -4vh;
-        margin-left: -5.5vh;
-    }
 }
 
 @media screen and (max-width: 610px) {
