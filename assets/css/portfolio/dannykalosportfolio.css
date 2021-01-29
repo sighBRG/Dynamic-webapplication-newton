@@ -1,5 +1,6 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .container {
     position:fixed;
@@ -19,7 +20,10 @@
         "menu text text"
         "menu text text";
 }
-
+form{
+    margin-top: 80%;
+    padding-bottom: 50px;
+}
 img, .contactinfo{
     max-width:100%;
     height:auto;

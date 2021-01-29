@@ -17,8 +17,8 @@
                 <span>073 667 93 60</span>
             </section>
             <section class="email">
-                <span id = "icon" class="fa fa-envelope"></span> 
-                <span>dannycalos@outlook.com</span>
+                <a href="#emailBox" id = "icon" class="fa fa-envelope"></a> 
+                <a href="#emailBox">dannycalos@outlook.com</a>
             </section>
             <section class="adress">
                 <span id = "icon" class="fa fa-map-marker"></span> 
@@ -90,6 +90,16 @@
                 <li>Engelska, Svenska, Franska, Standard Arabiska och Libanesiska (flytande i både tal och skrift).</li>
             </section>
             <section id="text-section7" class="text-section7"></section>
+            <form id="emailBox" action="mailto:dannycalos@outlook.com" method="post" enctype="text/plain">
+                Namn:<br>
+                <input type="text" name="name" required><br>
+                Ämne:<br>
+                <input type="text" name="subject" required><br>
+                Meddelande:<br>
+                <textarea name="Message" rows="10" cols="50" required></textarea><br><br>
+                <input type="submit" value="Sicka">
+                <input type="reset" value="Börja om">
+            </form>
         </div>
     </div>
 </body>
