@@ -72,11 +72,12 @@ a.active,a:hover{
     transition: .5s;
 }
 
-.text-section2, .text-section3, 
+#mobileIconTag, .text-section2, .text-section3, 
 .text-section4, .text-section5, 
 .text-section6, .text-section7{
     display: none;
 }
+
 
 @media only screen and (max-width: 960px){
     .container{
@@ -100,6 +101,7 @@ a.active,a:hover{
         "image"
         "contactinfo"
         "menu"
+        "text"
         "text";
     }
 
@@ -120,17 +122,18 @@ a.active,a:hover{
         margin-left: 40%;
     }
 
-    nav{
-        
-    }
-
     .text{
+        margin-top: 30%;
         margin-left: 18%;
     }
 
-    #mobileNumber, #emailAddress,
+    #phoneIcon, #mobileNumber, #emailAddress,
     #location, #linkedinProfile{
         display: none;
+    }
+
+    #mobileIconTag{
+        display: block;
     }
 
 }
