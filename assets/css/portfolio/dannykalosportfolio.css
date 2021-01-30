@@ -118,6 +118,10 @@ a.active,a:hover{
         margin-right: auto;
     }
 
+    nav{
+        padding-left: 7%;
+    }
+
     .contactinfo{
         gap: 30%;
     }
