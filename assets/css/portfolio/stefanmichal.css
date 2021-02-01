@@ -38,7 +38,7 @@ body {
 #container4 {
     min-height: 10em;
     position: relative;
-    background-color: #333;
+    background-color: #2e1f27;
 }
 
 #container h1,
@@ -360,6 +360,10 @@ h1 {
 @media screen and (max-width: 360px) {
     #container,
     #container3,
+    #container5 {
+        min-height: 6em;
+    }
+    #container2,
     #container4 {
         min-height: 6em;
     }
@@ -395,4 +399,89 @@ h1 {
     [class*="heading"] {
          left: 50%;
     }
+}
+
+.work-experience {
+    display: flex;
+    color: #92dce5;
+}
+
+.headline {
+    display: flex;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    grid-area: content;
+    border: 1px solid grey;
+}
+
+[class*="box"] {
+    border: 1px solid grey;
+}
+
+.boxes {
+    display: flex;
+    padding: 0 0 40px;
+    position: relative;
+}
+
+.box-info-first {
+    flex-basis: 50%;
+    display: flex;
+    order: 1;
+    padding-right: 10px;
+    flex-direction: column;
+    text-align: right;
+}
+
+.box-info {
+
+}
+
+.box-info-title {
+    color: #fafafa;
+}
+
+.box-info-company-name {
+    color: #92dce5;
+}
+
+.box-info-detail {
+    color: #fafafa;
+}
+
+.box-icon-second {
+    position: relative;
+    flex-basis: 5%;
+    order: 2;
+}
+
+.box-icon-second-detail {
+    border-radius: 50%;
+    font-size: 2.6rem;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box-dot-third {
+
+}
+
+.box-date-fourth {
+
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
 }
