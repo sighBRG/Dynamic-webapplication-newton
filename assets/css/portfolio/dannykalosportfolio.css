@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container {
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%; 
+    background:rgba(91, 109, 126, 0.404);
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        ". image contactinfo"
+        "menu text text"
+        "menu text text";
+}
+form{
+    margin-top: 100%;
+    padding-bottom: 30px;
+}
+img, .contactinfo{
+    max-width:100%;
+    height:auto;
+    max-height:100%;
+}
+img{
+    grid-area: image;
+    min-width: 240px;
+    min-height: 180px;
+}
+.contactinfo{
+    grid-area: contactinfo;
+    margin: auto;
+    margin-left: 0;
+}
+
+.text{
+    margin-top: 3%;
+    margin-right: 30%;
+    grid-area: text;
+}
+
+nav{
+    grid-area: menu;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul{
+    float: none;
+    margin-right: 20px;
+}
+
+nav ul li{
+    line-height: 55px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: dodgerblue;
+    transition: .5s;
+}
+
+#mobileIconTag, .text-section2, .text-section3, 
+.text-section4, .text-section5, 
+.text-section6, .text-section7{
+    display: none;
+}
+
+
+@media only screen and (max-width: 960px){
+    .container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "image contactinfo contactinfo"
+        "menu text text"
+        "menu text text";
+    }
+    img{
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image"
+        "contactinfo"
+        "menu"
+        "text";
+    }
+
+    img, nav,
+    .contactinfo{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img, .contactinfo, 
+    .text, form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav{
+        padding-left: 7%;
+    }
+
+    .contactinfo{
+        gap: 30%;
+    }
+
+    .text{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 5px;
+    }
+
+    #phoneIcon, #mobileNumber, #emailAddress,
+    #location, #linkedinProfile{
+        display: none;
+    }
+
+    #mobileIconTag{
+        display: inline-block;
+    }
+
+}
