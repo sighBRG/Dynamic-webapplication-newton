@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    display: grid;
+    grid-template-columns: 0.8fr 2fr 1fr;
+    grid-template-rows: 1fr 8.35fr;
+    grid-template-areas: 
+        "menu intro post-announcement"
+        "menu announcements post-announcement"
+    ;
+}
+
+.intro{
+    grid-area: intro;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: #92DCE5;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    margin: auto;
+    text-align: center;
+    height: 25%;
+    width: 80%;
+    background-color: #333333;
+    border-radius: 25px;
+}
+
+a{
+    display: inline-block;
+    padding: 15px 15px;
+    color: white;
+}
+
+.announcements{
+    grid-area: announcements;
+}
+
+.post-announcement{
+    grid-area: post-announcement;
+}
