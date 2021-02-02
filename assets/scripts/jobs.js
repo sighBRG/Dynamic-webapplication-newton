@@ -1,19 +1,25 @@
 function displayNavContents(ul, section){
     let allUls = document.getElementsByTagName('ul');
     let aTag = document.getElementById(section);
+    let ulTag = document.getElementById(ul);
 
-    for(let i = 0 ; i < allUls.length ; i++){
-        allUls[i].style.display = 'none';
-        
-        let navTag = document.getElementById('navTag'+ (i + 1));
-        let newInnerHTML = replaceCharaterOfString(navTag.innerHTML, 0, '+');
-        navTag.innerHTML = newInnerHTML;        
+    if(ulTag.style.display == 'inline-block'){
+        ulTag.style.display = 'none';
+        let newInnerHTML = aTag.innerHTML.replace('-', '+');
+        aTag.innerHTML = newInnerHTML;
+    }else{
+        for(let i = 0 ; i < allUls.length ; i++){
+            allUls[i].style.display = 'none';
+            
+            let navTag = document.getElementById('navTag'+ (i + 1));
+            let newInnerHTML = replaceCharaterOfString(navTag.innerHTML, 0, '+');
+            navTag.innerHTML = newInnerHTML;        
+        }
+        ulTag.style.display = 'inline-block';
+
+        let newInnerHTML = aTag.innerHTML.replace('+', '-');
+        aTag.innerHTML = newInnerHTML;
     }
-    let childrenOfUl = document.getElementById(ul);
-    childrenOfUl.style.display = 'inline-block';
-
-    let newInnerHTML = aTag.innerHTML.replace('+', '-');
-    aTag.innerHTML = newInnerHTML;
 }
 
 function replaceCharaterOfString(string, index, replacement) {
