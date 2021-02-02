@@ -57,7 +57,7 @@ nav{
 a{
     display: inline-block;
     padding-top: 10%;
-    padding-left: 25%;
+    padding-left: 20%;
     padding-right: 30%;
     padding-bottom: 10%;
     color: white;
@@ -66,10 +66,14 @@ a{
 
 ul{
     display: none;
-    transition: 1s;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 ul a{
-    transition: 1s;
+    padding-top: 0;
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 5%;
 }
 .announcements{
     grid-area: announcements;
