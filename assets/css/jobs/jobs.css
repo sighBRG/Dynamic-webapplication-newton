@@ -2,6 +2,27 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Didot;
+    src: url(../../fonts/Didot-Regular.ttf);
+}
+
+@font-face {
+    font-family: Liberation-Mono;
+    src: url(../../fonts/LiberationMono-Regular.ttf);
+}
+
+body{
+    font-family: Didot;
+    size: 40px;
+}
+
+a{
+    text-decoration: none;
+    font-family: Didot;
+    size: 40px;
+}
+
 body{
     margin:0;
     display: grid;
@@ -43,6 +64,13 @@ a{
     word-break: break-all;
 }
 
+ul{
+    display: none;
+    transition: 1s;
+}
+ul a{
+    transition: 1s;
+}
 .announcements{
     grid-area: announcements;
 }
