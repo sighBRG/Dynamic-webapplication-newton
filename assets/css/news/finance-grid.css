@@ -74,13 +74,14 @@ footer {
 .navbox {
     background-color: #333333;
     border-radius: 25px;
-    display: flex;
+    display: block;
     grid-area: nav;
     position: fixed;
     top: 30%;
 }
 
 .navmenu {
+    display: block;
     grid-area: "navmenu";
     background-color: #333333;
     border-radius: 25px;
@@ -96,7 +97,7 @@ footer {
     background-color: #333333;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1050px) {
     #maingrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -110,20 +111,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-    #maingrid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-                "nav header header header"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox";
-        gap: 2%;
-    }
-}
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1050px) {
     #maingrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
