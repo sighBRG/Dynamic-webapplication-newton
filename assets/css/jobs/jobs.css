@@ -27,7 +27,7 @@ body{
     margin:0;
     display: grid;
     grid-template-columns: 0.8fr 2fr 1fr;
-    grid-template-rows: 1fr 8.35fr;
+    grid-template-rows: 0.5fr 8.35fr;
     grid-template-areas: 
         "menu intro post-announcement"
         "menu announcements post-announcement"
@@ -38,11 +38,17 @@ body{
     grid-area: intro;
 }
 
+h1{
+    margin-left: 2%;
+}
+
+/* menu */
 .menu{
     grid-area: menu;
     background-color: #92DCE5;
     display: flex;
-    align-items: center;
+    align-items: start;
+    padding-top: 100%;
 }
 
 nav{
@@ -75,10 +81,22 @@ ul a{
     padding-right: auto;
     padding-bottom: 5%;
 }
-.announcements{
-    grid-area: announcements;
-}
 
 .post-announcement{
     grid-area: post-announcement;
 }
+
+/* announcements */
+.announcements{
+    grid-area: announcements;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements section{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+
