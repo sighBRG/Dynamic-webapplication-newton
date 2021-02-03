@@ -97,6 +97,23 @@ ul a{
     padding-left: 2%;
     padding-right: 2%;
 }
+.pagination{
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination a {
+    color: #333333;
+    word-break: keep-all;
+}
+
+#btn_prev{
+    margin-right: -10%;
+}
+
+.pagination span{
+    padding-top: 10%;
+}
 
 
 
