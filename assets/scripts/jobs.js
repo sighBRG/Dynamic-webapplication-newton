@@ -25,3 +25,9 @@ function displayNavContents(ul, section){
 function replaceCharaterOfString(string, index, replacement) {
     return string.substr(0, index) + replacement + string.substr(index + replacement.length);
 }
+
+// screen height
+let screenHeight = screen.availHeight;
+document.getElementsByTagName("body")[0].style.minHeight = screen.height - 10  +"px";
+console.log(screenHeight);
+// Pagination
