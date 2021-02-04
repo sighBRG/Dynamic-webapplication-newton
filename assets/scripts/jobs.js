@@ -32,8 +32,8 @@ function replaceCharaterOfString(string, index, replacement) {
 }
 
 
-// Pagination
 let announcements = document.getElementsByClassName("announcements")[0];
+let sections = announcements.getElementsByTagName("section");
 
 // adding some dummy data
 for(let i = 0 ; i < 18 ; i++){
@@ -43,10 +43,41 @@ announcements.insertBefore(section, announcements.firstChild);
 };
 
 // splitting down all anncouncements into one page for every 5 announcements
-for(let i = 0 ; i < 5 ; i++){
-    announcements.children[i].style.display = 'block';
+function displayFirstPage(){
+    for(let i = 0 ; i < sections.length ; i++){
+        sections[i].style.display = 'none';
+    }
+    for(let i = 0 ; i < 5 ; i++){
+        sections[i].style.display = 'block';
+    }
 }
 
+displayFirstPage();
+
+// searching feature
+// function searchJob(){
+//     let searchKey = document.getElementById("searchKey").value.toUpperCase();
+//     sections = announcements.getElementsByTagName("section");
+//     let title ;
+//     if(!searchKey){
+//         displayFirstPage();
+//     }else{
+//         for (i = 0; i < sections.length; i++) {
+//             title = sections[i].firstChild.innerHTML.toUpperCase();
+//             console.log(searchKey);
+//             if (title.indexOf(searchKey) > -1) {
+//                 sections[i].style.display = "block";
+//                 if(i > 3){
+//                     return;
+//                 }
+//             } else {
+//                 sections[i].style.display = "none";
+//             }
+//         }
+//     }
+// }
+
+// paginantion
 var page = parseInt(document.getElementById("page").innerHTML);
 
 function pageReference(page){
@@ -54,7 +85,7 @@ function pageReference(page){
     let rightArrow = document.getElementById("btn_next");
     if(page == 1) {
         leftArrow.style.visibility = 'hidden';
-    }else if(page == Math.ceil(announcements.getElementsByTagName("section").length / 5) ){
+    }else if(page == Math.ceil(sections.length / 5) ){
         rightArrow.style.visibility = 'hidden';
     }
     else{
@@ -65,8 +96,8 @@ function pageReference(page){
 
 function getFirstIndexOfBlock(){
     var firstIndexOfBlock;
-    for(firstIndexOfBlock = 0 ; firstIndexOfBlock < announcements.getElementsByTagName("section").length ; firstIndexOfBlock++){
-    if(announcements.children[firstIndexOfBlock].style.display == 'block'){
+    for(firstIndexOfBlock = 0 ; firstIndexOfBlock < sections.length ; firstIndexOfBlock++){
+    if(sections[firstIndexOfBlock].style.display == 'block'){
         break;
         }
     }
@@ -75,16 +106,17 @@ function getFirstIndexOfBlock(){
 
 function browseNext(){
     var firstOccurence = getFirstIndexOfBlock();
+    console.log(firstOccurence);
+    console.log(announcements);
     for(let i = 0; i < 5; i++){
-        announcements.children[i + firstOccurence].style.display = 'none';
-        if(announcements.children[i + firstOccurence + 5]){
-        announcements.children[i + firstOccurence + 5].style.display = 'block';
+        sections[i + firstOccurence].style.display = 'none';
+        if(sections[i + firstOccurence + 5]){
+            sections[i + firstOccurence + 5].style.display = 'block';
         }
     }
 
     page++;
     document.getElementById("page").innerHTML = page;
-    console.log(announcements);
     pageReference(page);
 } 
 
@@ -92,10 +124,10 @@ function browsePrevious(){
     var firstOccurence = getFirstIndexOfBlock();
     console.log(firstOccurence);
     for(let i = 0; i < 5; i++){
-        if(announcements.getElementsByTagName("section")[i + firstOccurence]){
-            announcements.getElementsByTagName("section")[i + firstOccurence].style.display = 'none';
+        if(sections[i + firstOccurence]){
+            sections[i + firstOccurence].style.display = 'none';
         }
-        announcements.children[i + firstOccurence - 5].style.display = 'block';
+        sections[i + firstOccurence - 5].style.display = 'block';
         
     }
 
