@@ -139,9 +139,16 @@ color: b1eaff;
 }
 @media only screen and (max-width: 960px){
     
-
+.resum{
+    display: grid;
+    width: auto;
+    height: auto;
+    display: flex;
+   
+}
  .resum .resum_left {
      width: 320px;
+    
     
 }
 .resum .resum_left .resum_profile{
@@ -152,9 +159,7 @@ color: b1eaff;
 
 @media only screen and (max-width: 670px){
     
-  .resum{
-      height: 100%;
-  }  
+    
 
 .resum .resum_left .resum_profile{
     width: 100%;
@@ -165,9 +170,7 @@ color: b1eaff;
     height: 70%;
 
 }
-.resum .resum_right{
-    width: 100%;
-}
+
 
 }
 }
