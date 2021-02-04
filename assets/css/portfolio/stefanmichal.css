@@ -453,13 +453,13 @@ h1 {
 
     #container2 h1,
     #container4 h1 {
-        left: 35%;
+        left: 30%;
     }
 
     .heading-box {
         left: 45%;
         margin-top: 15%;
-        min-width: 75%;
+        min-width: 55%;
     }
 
     .heading-box-2s {
@@ -468,6 +468,10 @@ h1 {
 
     .arrow-down img {
         left: 48%;
+    }
+
+    .qualification-section {
+        left: -35%;
     }
 }
 
@@ -495,6 +499,10 @@ h1 {
         min-width: 100%;
     }
 
+    .heading-box-education {
+        left: 65%;
+    }
+
     .arrow-down img {
         left: 47%;
     }
@@ -517,6 +525,10 @@ h1 {
         margin-left: -45%;
         margin-top: 20%;
         min-width: 96%;
+    }
+
+    .heading-box-education {
+        left: 70%;
     }
 
     .heading-box-2s {
@@ -546,7 +558,6 @@ h1 {
     #container2 h1,
     #container4 h1 {
         font-size: 250%;
-        left: 15%;
     }
 
     .small-screen {
@@ -562,8 +573,17 @@ h1 {
 
     .heading-box {
         margin-left: -51%;
-        margin-top: 30%;
+        margin-top: 20%;
         min-width: 85%;
+    }
+
+    .heading-box-education {
+        left: 80%;
+        top: -10%;
+    }
+
+    .heading-box-qualifications {
+        left: 70%;
     }
 
     .heading-box-2s {
@@ -615,8 +635,24 @@ h1 {
         text-decoration: underline;
         background-color: #2e1f27;
         color: #92DCE5;
+
         margin-left: -5%;
     }
+
+    .box-date-workexperience-education {
+        background-color: #fafafa;
+        text-decoration: none;
+        color: #2e1f27;
+    }
+
+    .box-info-title-3s {
+        font-size: 110%;
+    }
+
+    .box-info-company-name {
+        font-size: 110%;
+    }
+
 }
 
 @media screen and (max-width: 455px) {
@@ -639,11 +675,18 @@ h1 {
         left: 10%;
     }
 
-
     .heading-box {
         margin-left: -43%;
         margin-top: 30%;
         min-width: 90%;
+    }
+
+    .heading-box-education {
+        left: 70%;
+    }
+
+    .heading-box-qualifications {
+        left: 60%;
     }
 
     .heading-box-2s {
@@ -700,6 +743,21 @@ h1 {
         color: #92DCE5;
         margin-left: -5%;
     }
+
+    .box-date-workexperience-education {
+        background-color: #fafafa;
+        text-decoration: none;
+        color: #2e1f27;
+    }
+
+    .box-info-title-3s {
+        font-size: 100%;
+    }
+
+    .box-info-company-name {
+        font-size: 100%;
+    }
+
 }
 
 
@@ -731,6 +789,18 @@ h1 {
     .heading-box {
         margin-top: 30%;
         min-width: 90%;
+    }
+
+    .heading-box-education {
+        left: 70%;
+    }
+
+    .heading-box-qualifications {
+        left: 65%;
+    }
+
+    .heading-box-workexperience {
+        left: 100%;
     }
 
     .heading-box-2s {
@@ -788,8 +858,19 @@ h1 {
         margin-left: -5%;
     }
 
-    [class*="heading"] {
-        left: 50%;
+    .box-date-workexperience-education {
+        background-color: #fafafa;
+        text-decoration: none;
+        color: #2e1f27;
     }
+
+    .box-info-title-3s {
+        font-size: 100%;
+    }
+
+    .box-info-company-name {
+        font-size: 100%;
+    }
+
 }
 
