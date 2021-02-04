@@ -107,6 +107,7 @@ ul a{
 
 #btn_prev{
     margin-right: -10%;
+    visibility: hidden;
 }
 
 .pagination span{
