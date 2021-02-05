@@ -158,7 +158,7 @@ h1 {
 }
 
 .space {
-    margin: 25px 25px 25px -20%;
+    margin: 10px 10px 10px -20%;
 }
 
 .boxes {
@@ -386,14 +386,20 @@ h1 {
         flex-direction: column;
         display: flex;
         justify-content: center;
-        min-width: 55%;
-        padding-left: 100px;
+        min-width: 65%;
         height: 70%;
     }
 
-    .heading-box {
-        margin-bottom: auto;
-        margin-top: auto;
+    .straight-experience {
+        margin-left: -10%;
+    }
+
+    .straight-education {
+        margin-left: 8%;
+    }
+
+    .expanding-content {
+        width: 70%;
     }
 
     .heading-titles {
@@ -401,7 +407,8 @@ h1 {
     }
 
     .content-box-row {
-        width: 80%;
+        width: 70%;
+        margin-left: 20%;
     }
 
     .arrow-down img {
@@ -410,7 +417,8 @@ h1 {
     }
 
     .social-box {
-        margin-left: 2%;
+        margin-left: 10%;
+        margin-top: -30%;
     }
 
     .social-box .fa {
@@ -429,9 +437,29 @@ h1 {
         flex-direction: column;
         display: flex;
         justify-content: center;
-        min-width: 55%;
-        padding-left: 100px;
         height: 70%;
+        min-width: 60%;
+    }
+
+    .straight-experience {
+        margin-left: -10%;
+    }
+
+    .straight-education {
+        margin-left: 8%;
+    }
+
+    .expanding-content {
+        width: 80%;
+    }
+
+    .content-box-row {
+        width: 120%;
+    }
+
+    .social-box {
+        margin-top: -40%;
+        margin-left: 12%;
     }
 
     .social-box .fa {
@@ -447,11 +475,29 @@ h1 {
 @media screen and (max-width: 1200px) and (min-width: 960px) {
 
     .heading-box {
-        min-width: 55%;
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 70%;
+        min-width: 60%;
+    }
+
+    .expanding-content {
+        width: 80%;
+    }
+
+    .straight-experience {
+        margin-left: -10%;
+    }
+
+    .straight-education {
+        margin-left: 10%;
     }
 
     .social-box {
-        margin-left: 10%;
+        margin-top: -40%;
+        margin-left: 15%;
     }
 
     .social-box .fa {
@@ -466,15 +512,25 @@ h1 {
 @media screen and (max-width: 960px) and (min-width: 768px) {
 
     .heading-box {
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+        height: 70%;
         min-width: 80%;
     }
 
-    .tablet-screen-education {
-        margin-left: 20%;
+    .expanding-content {
+        width: 75%;
+    }
+
+    .straight-experience {
+        margin-left: -27%;
     }
 
     .social-box {
-        margin-left: 10%;
+        margin-top: -50%;
     }
 
     .social-box .fa {
@@ -495,19 +551,25 @@ h1 {
     }
 
     .heading-box {
-        min-width: 96%;
+        margin: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        padding-left: 60px;
+        height: 75%;
+        min-width: 100%;
     }
 
-    .tablet-screen-experience {
-        margin-left: 10%;
+    .expanding-content {
+        width: 100%;
     }
 
     .tablet-screen-education {
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
     .social-box {
-        margin-left: 10%;
+        margin-top: -50%;
     }
 
     .social-box .fa {
@@ -605,7 +667,7 @@ h1 {
     }
 
     .social-box {
-        margin-left: 10%;
+        margin-top: -100%;
     }
 
     .fa {
@@ -640,11 +702,11 @@ h1 {
     }
 
     .qualification-section {
-        margin-left: 18%;
+        margin-left: 5%;
     }
 
     .heading-box {
-        min-width: 90%;
+        min-width: 100%;
     }
 
     .content-box-column {
@@ -707,6 +769,9 @@ h1 {
         font-size: 100%;
     }
 
+    .social-box {
+        margin-top: -100%;
+    }
 }
 
 
@@ -725,6 +790,8 @@ h1 {
 
     .heading-box {
         min-width: 90%;
+        padding-left: 0;
+        height: 80%;
     }
 
     .content-box-column {
@@ -789,7 +856,9 @@ h1 {
 
     .social-box {
         display: flex;
+        margin-left: 15%;
         flex-direction: column;
+        margin-top: -100%;
     }
 
     .social-box-padding {
@@ -799,6 +868,25 @@ h1 {
 
     .small-screen-social {
         margin-left: 25%;
+    }
+
+    .small-screen-education {
+        margin-left: 25%;
+        width: 100%;
+    }
+
+    .small-screen-qualifications {
+        margin-left: 5%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .qualification-category {
+        font-size: 150%;
+    }
+
+    .qualification-section {
+        margin-left: 15%;
     }
 }
 
