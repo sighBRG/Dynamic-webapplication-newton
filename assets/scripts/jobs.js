@@ -34,14 +34,14 @@ function replaceCharaterOfString(string, index, replacement) {
 
 /*############## pagination ##############*/ 
 let announcements = document.getElementsByClassName("announcements")[0];
-let sections = announcements.getElementsByTagName("section");
+var sections = announcements.getElementsByTagName("section");
 var announcementsPerPage = 5;
 
 // adding some dummy data
 for(let i = 0 ; i < 18 ; i++){
-let section = fillAnnoucementInfo((i+1) + '. Javautvecklare söks', 'Newton', '2021-02-22', 'Newton@skola.se', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et porta nisl. Aenean maximus erat eu finibus tempor. Duis eu porttitor ligula. Aliquam mattis urna vitae enim ultricies, sagittis varius justo ornare. Curabitur lorem lorem, ullamcorper sit amet laoreet non, faucibus in lorem. Phasellus a ex suscipit, semper est quis, vestibulum metus. Curabitur sit amet accumsan eros. Aenean faucibus dui vel tortor consectetur hendrerit. Curabitur ornare condimentum nulla eu tempus. Aliquam erat volutpat. Nulla sed magna convallis, rutrum nisl sit amet, mattis erat. Suspendisse mollis pulvinar sapien, eu iaculis lacus congue in. Aenean ultrices urna eu felis feugiat porta. Maecenas libero purus, iaculis at luctus ac, varius in felis.');
-section.style.display = 'none';
-announcements.insertBefore(section, announcements.firstChild);
+    let section = fillAnnoucementInfo((i+1) + '. Javautvecklare söks', 'Newton', '2021-02-22', 'Newton@skola.se', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et porta nisl. Aenean maximus erat eu finibus tempor. Duis eu porttitor ligula. Aliquam mattis urna vitae enim ultricies, sagittis varius justo ornare. Curabitur lorem lorem, ullamcorper sit amet laoreet non, faucibus in lorem. Phasellus a ex suscipit, semper est quis, vestibulum metus. Curabitur sit amet accumsan eros. Aenean faucibus dui vel tortor consectetur hendrerit. Curabitur ornare condimentum nulla eu tempus. Aliquam erat volutpat. Nulla sed magna convallis, rutrum nisl sit amet, mattis erat. Suspendisse mollis pulvinar sapien, eu iaculis lacus congue in. Aenean ultrices urna eu felis feugiat porta. Maecenas libero purus, iaculis at luctus ac, varius in felis.');
+    section.style.display = 'none';
+    announcements.insertBefore(section, announcements.firstChild);
 };
 
 // splitting down all anncouncements into one page for every 5 announcements
@@ -56,28 +56,26 @@ function displayFirstPage(){
 
 displayFirstPage();
 
-// searching feature
-// function searchJob(){
-//     let searchKey = document.getElementById("searchKey").value.toUpperCase();
-//     sections = announcements.getElementsByTagName("section");
-//     let title ;
-//     if(!searchKey){
-//         displayFirstPage();
-//     }else{
-//         for (i = 0; i < sections.length; i++) {
-//             title = sections[i].firstChild.innerHTML.toUpperCase();
-//             console.log(searchKey);
-//             if (title.indexOf(searchKey) > -1) {
-//                 sections[i].style.display = "block";
-//                 if(i > 3){
-//                     return;
-//                 }
-//             } else {
-//                 sections[i].style.display = "none";
-//             }
-//         }
-//     }
-// }
+// search feature
+function searchJob(){
+    let searchKey = document.getElementById("searchKey").value.toUpperCase();
+    let title ;
+
+    if(!searchKey){
+        displayFirstPage(sections);
+    }else{
+        for (i = 0; i < sections.length; i++) {
+            title = sections[i].firstChild.innerHTML.toUpperCase();
+
+            if (title.indexOf(searchKey) > -1) {
+                sections[i].style.display = "block";
+
+            } else {
+                sections[i].style.display = "none";
+            }
+        }
+    }
+}
 
 // paginantion
 var page = parseInt(document.getElementById("page").innerHTML);

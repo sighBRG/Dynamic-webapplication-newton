@@ -36,7 +36,7 @@ body{
     grid-area: intro;
 }
 
-.intro h1, .intro input{
+.intro h1, .intro input, label{
     margin-left: 2%;
 }
 
