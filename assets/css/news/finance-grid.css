@@ -46,24 +46,12 @@ footer {
 			"nav bigbox bigbox smallbox"
 			"nav bigbox bigbox smallbox"
             "nav bigbox bigbox smallbox";
-    gap: 2%;
-}
-
-#navgrid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-			"."
-			"navmenu"
-			".";
-    gap: 2%;
-}
+    gap: 2%;}
 
 .bigbox {
     background-color: #312d2d;
     border-radius: 25px;
-    display: flexbox;
+    display: flex;
     grid-area: bigbox;
 }
 
@@ -79,79 +67,75 @@ footer {
 .smallbox {
     background-color: #333333;
     border-radius: 25px;
-    display: flexbox;
+    display: flex;
     grid-area: smallbox;
 }
 
 .navbox {
-    display: flexbox;
+    background-color: #333333;
+    border-radius: 25px;
+    display: block;
     grid-area: nav;
+    position: fixed;
+    top: 30%;
 }
 
 .navmenu {
+    display: block;
     grid-area: "navmenu";
     background-color: #333333;
     border-radius: 25px;
+    padding: 100px;
+    text-align: center;
 }
 
 .headbox {
     border-radius: 25px;
-    display: flexbox;
+    display: flex;
     grid-area: header;
     padding-left: 20px;
     background-color: #333333;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1050px) {
     #maingrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
-                "nav header header header"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox";
+        "nav header header header"
+        "nav bigbox bigbox smallbox"
+        "nav bigbox bigbox smallbox"
+        "nav bigbox bigbox smallbox";
         gap: 2%;
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 960px) {
+@media screen and (max-width: 1050px) {
     #maingrid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-                "nav header header header"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox";
-        gap: 2%;
-    }
-}
-
-@media screen and (max-width: 960px) and (min-width: 768px) {
-    #maingrid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-                "nav header header"
-                "nav bigbox bigbox"
-                "nav smallbox smallbox";
-        gap: 2%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #maingrid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
-                "header"
-                "nav"
-                "bigbox"
-                "smallbox";
+                "header header"
+                "nav nav"
+                "bigbox bigbox"
+                "smallbox smallbox";
         gap: 2%;
+    }
+
+    .navbox {
+        display: flex;
+        grid-area: nav;
+        position: relative;
+        top: 0%;
+    }
+
+    .navmenu {
+        grid-area: "navmenu";
+        background-color: #333333;
+        border-radius: 25px;
+        padding: 10px;
+        text-align: center;
     }
 }
