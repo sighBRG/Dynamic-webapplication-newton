@@ -32,8 +32,10 @@ function replaceCharaterOfString(string, index, replacement) {
 }
 
 
+/*############## pagination ##############*/ 
 let announcements = document.getElementsByClassName("announcements")[0];
 let sections = announcements.getElementsByTagName("section");
+var announcementsPerPage = 5;
 
 // adding some dummy data
 for(let i = 0 ; i < 18 ; i++){
@@ -47,7 +49,7 @@ function displayFirstPage(){
     for(let i = 0 ; i < sections.length ; i++){
         sections[i].style.display = 'none';
     }
-    for(let i = 0 ; i < 5 ; i++){
+    for(let i = 0 ; i < announcementsPerPage ; i++){
         sections[i].style.display = 'block';
     }
 }
@@ -85,8 +87,10 @@ function pageReference(page){
     let rightArrow = document.getElementById("btn_next");
     if(page == 1) {
         leftArrow.style.visibility = 'hidden';
-    }else if(page == Math.ceil(sections.length / 5) ){
+        rightArrow.style.visibility = 'visible';
+    }else if(page == Math.ceil(sections.length / announcementsPerPage) ){
         rightArrow.style.visibility = 'hidden';
+        leftArrow.style.visibility = 'visible';
     }
     else{
         leftArrow.style.visibility = 'visible';
@@ -106,12 +110,11 @@ function getFirstIndexOfBlock(){
 
 function browseNext(){
     var firstOccurence = getFirstIndexOfBlock();
-    console.log(firstOccurence);
-    console.log(announcements);
-    for(let i = 0; i < 5; i++){
+
+    for(let i = 0; i < announcementsPerPage; i++){
         sections[i + firstOccurence].style.display = 'none';
-        if(sections[i + firstOccurence + 5]){
-            sections[i + firstOccurence + 5].style.display = 'block';
+        if(sections[i + firstOccurence + announcementsPerPage]){
+            sections[i + firstOccurence + announcementsPerPage].style.display = 'block';
         }
     }
 
@@ -123,11 +126,11 @@ function browseNext(){
 function browsePrevious(){
     var firstOccurence = getFirstIndexOfBlock();
     console.log(firstOccurence);
-    for(let i = 0; i < 5; i++){
+    for(let i = 0; i < announcementsPerPage; i++){
         if(sections[i + firstOccurence]){
             sections[i + firstOccurence].style.display = 'none';
         }
-        sections[i + firstOccurence - 5].style.display = 'block';
+        sections[i + firstOccurence - announcementsPerPage].style.display = 'block';
         
     }
 
