@@ -42,7 +42,7 @@ var pageElement = document.getElementById("page");
 
 
 // adding some dummy data
-for(let i = 0 ; i < 18 ; i++){
+for(let i = 0 ; i < 21 ; i++){
     let section = fillAnnoucementInfo((i+1) + '. Javautvecklare söks', 'Newton', '2021-02-22', 'Newton@skola.se', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et porta nisl. Aenean maximus erat eu finibus tempor. Duis eu porttitor ligula. Aliquam mattis urna vitae enim ultricies, sagittis varius justo ornare. Curabitur lorem lorem, ullamcorper sit amet laoreet non, faucibus in lorem. Phasellus a ex suscipit, semper est quis, vestibulum metus. Curabitur sit amet accumsan eros. Aenean faucibus dui vel tortor consectetur hendrerit. Curabitur ornare condimentum nulla eu tempus. Aliquam erat volutpat. Nulla sed magna convallis, rutrum nisl sit amet, mattis erat. Suspendisse mollis pulvinar sapien, eu iaculis lacus congue in. Aenean ultrices urna eu felis feugiat porta. Maecenas libero purus, iaculis at luctus ac, varius in felis.');
     section.setAttribute("id", i);
     section.style.display = 'none';
@@ -147,8 +147,7 @@ function pageReferenceSearchResult(page){
         rightArrow.style.visibility = 'hidden';
         leftArrow.style.visibility = 'visible';
         pageElement.style.visibility = 'visible';
-    }
-    else{
+    }else{
         leftArrow.style.visibility = 'visible';
         rightArrow.style.visibility = 'visible';
         pageElement.style.visibility = 'visible';
@@ -194,7 +193,8 @@ function browseNext(){
 function browsePrevious(){
     var firstOccurence = getFirstIndexOfBlock(sections);
     let firstOccurenceSearchResult = getFirstIndexOfBlock(searchResultIdArray);
-
+    page--;
+    document.getElementById("page").innerHTML = page;
     if(searchResultIdArray.length != 0){
         for(let i = 0; i < announcementsPerPage; i++){
             if(searchResultIdArray[i + firstOccurenceSearchResult]){
@@ -202,6 +202,7 @@ function browsePrevious(){
             }
             searchResultIdArray[i + firstOccurenceSearchResult - announcementsPerPage].style.display = 'block';
         }
+        pageReferenceSearchResult(page);
     }else{
         for(let i = 0; i < announcementsPerPage; i++){
             if(sections[i + firstOccurence]){
@@ -210,10 +211,8 @@ function browsePrevious(){
                 sections[i + firstOccurence - announcementsPerPage].style.display = 'block';
             
         }
+        pageReference(page);
     }
-    page--;
-    document.getElementById("page").innerHTML = page;
-    pageReference(page);
 } 
 
 // creates a section element for announcement
