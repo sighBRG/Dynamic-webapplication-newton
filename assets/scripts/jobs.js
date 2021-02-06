@@ -38,8 +38,9 @@ var sections = announcements.getElementsByTagName("section");
 var announcementsPerPage = 5;
 
 // adding some dummy data
-for(let i = 0 ; i < 18 ; i++){
+for(let i = 0 ; i < 15 ; i++){
     let section = fillAnnoucementInfo((i+1) + '. Javautvecklare söks', 'Newton', '2021-02-22', 'Newton@skola.se', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et porta nisl. Aenean maximus erat eu finibus tempor. Duis eu porttitor ligula. Aliquam mattis urna vitae enim ultricies, sagittis varius justo ornare. Curabitur lorem lorem, ullamcorper sit amet laoreet non, faucibus in lorem. Phasellus a ex suscipit, semper est quis, vestibulum metus. Curabitur sit amet accumsan eros. Aenean faucibus dui vel tortor consectetur hendrerit. Curabitur ornare condimentum nulla eu tempus. Aliquam erat volutpat. Nulla sed magna convallis, rutrum nisl sit amet, mattis erat. Suspendisse mollis pulvinar sapien, eu iaculis lacus congue in. Aenean ultrices urna eu felis feugiat porta. Maecenas libero purus, iaculis at luctus ac, varius in felis.');
+    section.setAttribute("id", i);
     section.style.display = 'none';
     announcements.insertBefore(section, announcements.firstChild);
 };
@@ -57,23 +58,45 @@ function displayFirstPage(){
 displayFirstPage();
 
 // search feature
+var searchResultIdArray = [];
 function searchJob(){
     let searchKey = document.getElementById("searchKey").value.toUpperCase();
     let title ;
-
+    searchResultIdArray = []; // empty array on every new search
     if(!searchKey){
-        displayFirstPage(sections);
+        displayNone();
+        displayFirstPage();
     }else{
         for (i = 0; i < sections.length; i++) {
             title = sections[i].firstChild.innerHTML.toUpperCase();
 
             if (title.indexOf(searchKey) > -1) {
-                sections[i].style.display = "block";
-
-            } else {
-                sections[i].style.display = "none";
-            }
+                searchResultIdArray.push(sections[i]);
+            } 
         }
+        displaySearchResult();
+    }
+}
+
+// display search results
+function displaySearchResult(){
+    displayNone();
+    if( searchResultIdArray.length <= announcementsPerPage){
+        for(let i = 0 ; i < searchResultIdArray.length ; i++){
+           searchResultIdArray[i].style.display = 'block';
+        }
+    }else{
+        for(let i = 0 ; i < announcementsPerPage ; i++){
+            searchResultIdArray[i].style.display = 'block';
+         }
+    }
+    
+}
+
+// set all sections to display none
+function displayNone(){
+    for(let i = 0 ; i < sections.length ; i++){
+        sections[i].style.display = 'none';
     }
 }
 
@@ -96,7 +119,7 @@ function pageReference(page){
     }
 }
 
-function getFirstIndexOfBlock(){
+function getFirstIndexOfBlock(sections){
     var firstIndexOfBlock;
     for(firstIndexOfBlock = 0 ; firstIndexOfBlock < sections.length ; firstIndexOfBlock++){
     if(sections[firstIndexOfBlock].style.display == 'block'){
@@ -107,12 +130,22 @@ function getFirstIndexOfBlock(){
 }
 
 function browseNext(){
-    var firstOccurence = getFirstIndexOfBlock();
+    let firstOccurence = getFirstIndexOfBlock(sections);
+    let firstOccurenceSearchResult = getFirstIndexOfBlock(searchResultIdArray);
 
-    for(let i = 0; i < announcementsPerPage; i++){
-        sections[i + firstOccurence].style.display = 'none';
-        if(sections[i + firstOccurence + announcementsPerPage]){
-            sections[i + firstOccurence + announcementsPerPage].style.display = 'block';
+    if(searchResultIdArray.length != 0){
+        for(let i = 0; i < announcementsPerPage; i++){
+            searchResultIdArray[i + firstOccurenceSearchResult].style.display = 'none';
+            if(searchResultIdArray[i + firstOccurenceSearchResult + announcementsPerPage]){
+                searchResultIdArray[i + firstOccurenceSearchResult + announcementsPerPage].style.display = 'block';
+            }
+        }
+    }else{
+        for(let i = 0; i < announcementsPerPage; i++){
+            sections[i + firstOccurence].style.display = 'none';
+            if(sections[i + firstOccurence + announcementsPerPage]){
+                sections[i + firstOccurence + announcementsPerPage].style.display = 'block';
+            }
         }
     }
 
@@ -122,16 +155,25 @@ function browseNext(){
 } 
 
 function browsePrevious(){
-    var firstOccurence = getFirstIndexOfBlock();
-    console.log(firstOccurence);
-    for(let i = 0; i < announcementsPerPage; i++){
-        if(sections[i + firstOccurence]){
-            sections[i + firstOccurence].style.display = 'none';
-        }
-        sections[i + firstOccurence - announcementsPerPage].style.display = 'block';
-        
-    }
+    var firstOccurence = getFirstIndexOfBlock(sections);
+    let firstOccurenceSearchResult = getFirstIndexOfBlock(searchResultIdArray);
 
+    if(searchResultIdArray.length != 0){
+        for(let i = 0; i < announcementsPerPage; i++){
+            if(searchResultIdArray[i + firstOccurenceSearchResult]){
+                searchResultIdArray[i + firstOccurenceSearchResult].style.display = 'none';
+            }
+            searchResultIdArray[i + firstOccurenceSearchResult - announcementsPerPage].style.display = 'block';
+        }
+    }else{
+        for(let i = 0; i < announcementsPerPage; i++){
+            if(sections[i + firstOccurence]){
+                sections[i + firstOccurence].style.display = 'none';
+            }
+                sections[i + firstOccurence - announcementsPerPage].style.display = 'block';
+            
+        }
+    }
     page--;
     document.getElementById("page").innerHTML = page;
     pageReference(page);
