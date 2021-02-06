@@ -131,6 +131,7 @@ function pageReference(page){
     
 }
 
+// referring to pages of search result  
 function pageReferenceSearchResult(page){
     let leftArrow = document.getElementById("btn_prev");
     let rightArrow = document.getElementById("btn_next");
