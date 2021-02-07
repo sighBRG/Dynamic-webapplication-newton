@@ -2,7 +2,7 @@
 let screenHeight = screen.availHeight;
 document.getElementsByTagName("body")[0].style.minHeight = screenHeight - 10  +"px";
 
-// navigation
+// navigation desktop screen
 function displayNavContents(ul, section){
     let allUls = document.getElementsByTagName('ul');
     let aTag = document.getElementById(section);
