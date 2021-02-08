@@ -29,8 +29,10 @@ ul {
     display: none;
     margin-top: 0;
     margin-bottom: 0;
+    word-break: keep-all;
 }
 
 ul a {
-    padding: 0 50% 50% 5%;
+    padding: 0 30% 5% 20%;
+    word-break: keep-all;
 }
