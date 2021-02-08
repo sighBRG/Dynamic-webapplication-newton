@@ -32,8 +32,5 @@ ul {
 }
 
 ul a {
-    padding-top: 0;
-    padding-left: auto;
-    padding-right: auto;
-    padding-bottom: 5%;
+    padding: 0 50% 50% 5%;
 }
