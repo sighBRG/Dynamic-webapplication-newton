@@ -103,6 +103,9 @@ ul a{
 .pagination a {
     color: #333333;
     word-break: keep-all;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 30%;
 }
 
 #btn_prev{
@@ -114,5 +117,119 @@ ul a{
     padding-top: 10%;
 }
 
+@media only screen and (max-width: 960px){
+    body{
+        margin:0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.15fr 0.1fr 1fr;
+        grid-template-areas: 
+            "menu"
+            "intro"
+            "announcements"
+        ;
+    }
+     
+    .menu{
+        display: static;   
+        padding-top: 0;
+        background-color: white;
+    }
+    
+    nav{
+        position: fixed;
+        display: grid;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: 
+            "navTag1 navTag2 navTag3"
+            "contents-news contents-developers contents-about"
+        ;
+        text-align: center;
+        background-color:  #92DCE5;
+        border-radius: 0;
+    }
 
+    #navTag1{
+        grid-area: navTag1;
+    }
+    #navTag2{
+        grid-area: navTag2;
+    }
+    #navTag3{
+        grid-area: navTag3;
+    }
 
+    #contents-news{
+        grid-area: contents-news;
+    }
+
+    #contents-developers{
+        grid-area: contents-developers;
+    }
+
+    #contents-about{
+        grid-area: contents-about;
+    }
+    
+    nav a{
+        display: inline-block;
+        margin: 5%;
+        padding: 0;
+        color: #333333;
+        font-size: 25px;
+        font-weight: bold;
+        word-break: keep-all;
+
+    }
+    
+    ul{
+        display: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul a{
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 40px;
+        padding-right: 70px;
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+    nav a{
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    ul a{
+        margin-top: 0;
+        margin-bottom: 2px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-left: 0;
+        padding-right: 40px;
+        font-size: 15px;
+    }
+
+    body{
+        margin:0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.11fr 0.1fr 1fr;
+        grid-template-areas: 
+            "menu"
+            "intro"
+            "announcements"
+        ;
+    }
+}
