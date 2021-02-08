@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/news/jobs.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Jobs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/news/games.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-bar.css">
+
+    <title>Games</title>
 </head>
 <body>
-    <div class="intro">
-        <h1>Här hittar du senaste jobbannonser</h1>
-        <div>
-            <label class="fa fa-search"></label>
-            <input type="text" id="searchKey" onkeyup="searchJob()" placeholder="Sök för jobbtitlar..">
-        </div>
-    </div>
+<div id="container">
     <div class="menu">
         <nav>
             <a id="navTag1" href="#" onclick="displayNavContents('contents-news', 'navTag1')">+IT-Nyheter</a>
@@ -38,17 +35,14 @@
             </ul>
         </nav>
     </div>
-    <div class="announcements">
-        <div class="pagination">
-            <a href="#" id="btn_prev" onclick="browsePrevious()"><</a>
-            <span id="page">1</span>
-            <a href="#" id="btn_next" onclick="browseNext()">></a>
-        </div>
-    </div>
-    <div class="post-announcement">
-    </div>
+    <header class="header">
+        <a href="#"><img src="assets/images/game-news/top-banner.jpg" alt="banner"></a>
+    </header>
+    <!--    <section class="big-article">HEJHEJ</section>-->
+    <!--    <section class="article1">HEJHEJ 1</section>-->
+    <!--    <section class="article2">HEJHEJ 2</section>-->
+
+</div>
 </body>
-<footer>
-    <script src="assets/scripts/jobs.js"></script> 
-</footer>
+<script src="assets/scripts/menu/menu-bar.js"></script>
 </html>
