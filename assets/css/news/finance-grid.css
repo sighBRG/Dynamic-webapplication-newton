@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -42,28 +43,16 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-			"nav header header header"
-			"nav bigbox bigbox smallbox"
-			"nav bigbox bigbox smallbox"
-            "nav bigbox bigbox smallbox";
-    gap: 2%;
-}
-
-#navgrid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-			"."
-			"navmenu"
-			".";
-    gap: 2%;
-}
+			"menu header header header"
+			"menu bigbox bigbox smallbox"
+			"menu bigbox bigbox smallbox"
+            "menu bigbox bigbox smallbox";
+    gap: 2%;}
 
 .bigbox {
     background-color: #312d2d;
     border-radius: 25px;
-    display: flexbox;
+    display: flex;
     grid-area: bigbox;
 }
 
@@ -79,79 +68,83 @@ footer {
 .smallbox {
     background-color: #333333;
     border-radius: 25px;
-    display: flexbox;
+    display: flex;
     grid-area: smallbox;
-}
-
-.navbox {
-    display: flexbox;
-    grid-area: nav;
-}
-
-.navmenu {
-    grid-area: "navmenu";
-    background-color: #333333;
-    border-radius: 25px;
 }
 
 .headbox {
     border-radius: 25px;
-    display: flexbox;
+    display: flex;
     grid-area: header;
     padding-left: 20px;
     background-color: #333333;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1050px) {
     #maingrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
-                "nav header header header"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox";
+        "menu header header header"
+        "menu bigbox bigbox smallbox"
+        "menu bigbox bigbox smallbox"
+        "menu bigbox bigbox smallbox";
         gap: 2%;
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 960px) {
+@media screen and (max-width: 1050px) {
     #maingrid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-                "nav header header header"
-                "nav bigbox bigbox smallbox"
-                "nav bigbox bigbox smallbox";
-        gap: 2%;
-    }
-}
-
-@media screen and (max-width: 960px) and (min-width: 768px) {
-    #maingrid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas:
-                "nav header header"
-                "nav bigbox bigbox"
-                "nav smallbox smallbox";
-        gap: 2%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    #maingrid {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
-                "header"
-                "nav"
-                "bigbox"
-                "smallbox";
+                "header header"
+                "menu menu"
+                "bigbox bigbox"
+                "smallbox smallbox";
         gap: 2%;
+    }
+
+    .navbox {
+        display: flex;
+        grid-area: nav;
+        position: relative;
+        top: 0%;
+    }
+
+    .navmenu {
+        grid-area: "menu";
+        background-color: #333333;
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    #navTag1 {
+        grid-area: navTag1;
+    }
+
+    #navTag2 {
+        grid-area: navTag2;
+    }
+
+    #navTag3 {
+        grid-area: navTag3;
+    }
+
+    #contents-news {
+        grid-area: contents-news;
+        margin-left: -10%;
+    }
+
+    #contents-developers {
+        grid-area: contents-developers;
+        margin-left: -10%;
+    }
+
+    #contents-about {
+        grid-area: contents-about;
+        margin-left: -10%;
     }
 }

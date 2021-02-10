@@ -45,6 +45,67 @@ h5 {
     align-self: center;    
 }
 
+#maingrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "topimage topimage"
+    "quote quote"
+    "contact workexperience"
+    "education stack"
+    "bottomimage bottomimage";
+  gap: 2%;
+  align-self: center;
+  justify-items: center;
+}
+
+.topimage {
+  display: flexbox;
+  grid-area: topimage;
+  align-self: center;
+}
+
+.bottomimage {
+  display: flexbox;
+  grid-area: bottomimage;
+  align-self: center;
+}
+
+.quote {
+  display: flexbox;
+  grid-area: quote;
+  align-self: center;
+}
+
+.contact {
+  display: flexbox;
+  grid-area: contact;
+  align-self: center;
+
+}
+
+.workexperience {
+  display: flexbox;
+  grid-area: workexperience;
+  align-self: center;
+
+}
+
+.education {
+  display: flexbox;
+  grid-area: education;
+  align-self: center;
+
+}
+
+.stack {
+  display: flexbox;
+  grid-area: stack;
+  align-self: center;
+
+}
+
 .navbar {
   position: fixed;
   top: 0px;
@@ -78,13 +139,14 @@ h5 {
 .flex-container {
     display: flex;
     align-self: center;
+    align-items: center;
     flex-direction: column;
     font-size: 16px;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 2%;
     margin-bottom: 2%;
-    padding: 2px;
+    padding: 20px;
     font-size: 20px;
   }
 
@@ -206,4 +268,42 @@ h5 {
     text-align: left;
     font-size: 20px;
   }
+
+  @media screen and (min-width: 1800px) {
+    #maingrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+        "topimage topimage"
+        "quote quote"
+        "contact workexperience"
+        "education stack"
+        "bottomimage bottomimage";
+      gap: 2%;
+      align-self: center;
+      align-content: center;
+      align-items: center;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    #maingrid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas:
+        "topimage"
+        "quote"
+        "contact"
+        "workexperience"
+        "education" 
+        "stack"
+        "bottomimage";
+      gap: 2%;
+      align-self: center;
+      align-content: center;
+      align-items: center;
+    }
+}
   
