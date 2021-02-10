@@ -22,7 +22,7 @@ footer {
 
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: .9fr 1fr 1fr 0.5fr;
     grid-template-areas:
 			"menu header header header"
             "menu big-article big-article sidebar"

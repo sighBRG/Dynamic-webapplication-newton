@@ -8,8 +8,7 @@
 }
 
 nav {
-
-    margin-top: 250px;
+    top: 40%;
     width: 16%;
     font-size: 18px;
     position: fixed;
