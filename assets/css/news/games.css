@@ -21,13 +21,13 @@ footer {
     display: grid;
 
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: .9fr 1fr 1fr 0.5fr;
+    grid-template-columns: .76fr 1fr 1fr .5fr .1fr;
+    grid-template-rows: auto 2.5fr 1fr 1fr;
     grid-template-areas:
-			"menu header header header"
-            "menu big-article big-article sidebar"
-			"menu article1 article2 sidebar"
-            "menu footer footer footer";
+			"menu header header header ."
+            "menu big-article big-article sidebar ."
+			"menu article1 article2 sidebar ."
+            "menu footer footer footer .";
     gap: 2%;
 }
 
@@ -61,8 +61,7 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    height: auto;
+    width: 100%;
 }
 
 
