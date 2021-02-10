@@ -3,16 +3,17 @@
     grid-area: menu;
     background-color: #92DCE5;
     display: flex;
-    height: 100vh;
+    height: 100%;
     width: 90%;
-    align-items: center;
+    align-items: start;
 }
 
 nav {
+    margin-top: 250px;
     width: 16%;
-    font-size: 20px;
+    font-size: 18px;
     position: fixed;
-    margin-left: 2.3%;
+    margin-left: 1.5%;
     text-align: center;
     background-color: #333333;
     border-radius: 25px;
@@ -22,7 +23,7 @@ a {
     display: inline-block;
     padding: 10% 30% 10% 20%;
     color: white;
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 ul {
@@ -42,13 +43,13 @@ ul a {
         display: static;   
         padding-top: 0;
         background-color: white;
-        align-items: start;
     }
     
     nav{
         position: fixed;
         display: grid;
         width: 100%;
+        margin-top: 0;
         margin-left: 0;
         margin-right: 0;
         grid-template-columns: repeat(3, 1fr);
