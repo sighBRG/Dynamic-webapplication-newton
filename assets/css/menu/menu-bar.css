@@ -36,3 +36,75 @@ ul a {
     padding: 0 30% 5% 20%;
     word-break: keep-all;
 }
+
+@media only screen and (max-width: 960px){
+    .menu{
+        display: static;   
+        padding-top: 0;
+        background-color: white;
+        align-items: start;
+    }
+    
+    nav{
+        position: fixed;
+        display: grid;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: 
+            "navTag1 navTag2 navTag3"
+            "contents-news contents-developers contents-about"
+        ;
+        text-align: center;
+        background-color:  #92DCE5;
+        border-radius: 0;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 5%;
+        padding: 0;
+        color: #333333;
+        font-size: 25px;
+        font-weight: bold;
+        word-break: keep-all;
+
+    }
+    
+    ul{
+        display: none;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    ul a{
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-left: 40px;
+        padding-right: 70px;
+        padding-bottom: 0;
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+    nav a{
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    ul a{
+        margin-top: 0;
+        margin-bottom: 2px;
+        margin-left: 3px;
+        margin-right: 3px;
+        padding-left: 0;
+        padding-right: 40px;
+        font-size: 15px;
+    }
+}
