@@ -38,7 +38,7 @@ hr{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    background: #252525;
+    background:#240c50; 
     color: #fff;
     padding: 20px 30px;
 
@@ -97,15 +97,7 @@ hr{
 }
 .banner-main-content h3{
     padding: 1rem 0;
-}
-.banner-main-content button{
-    border: none;
-    background: #252525;
-    padding: 14px 18px;
-    font-size: 1.2rem;
-    font-family: 'Montserrat',
-    sans-serif;
-    transition: background 1s ease;
+
 }
 .banner-main-content button a{
     color: #f3f3f3;
@@ -281,7 +273,7 @@ main a:hover{
     margin-right: 10px;
 }
 footer{
-    background: #252525;
+    background: #07083f;
     color: #f3f3f3;
     padding: 30px;
 }
@@ -372,7 +364,7 @@ footer > p{
     }
     .navigation-container{
         display: flex;
-        background: #252525;
+        background: #240c50;
         align-items: center;
         flex-wrap: wrap;
 
@@ -416,6 +408,7 @@ footer > p{
     .social-icons ul li{
         padding: 20px;
     }
+    
     
     
 }
