@@ -3,6 +3,11 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Liberation-Mono;
+    src: url("../../fonts/LiberationMono-Regular.ttf");
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -13,6 +18,7 @@ section,
 aside,
 footer {
     border: 1px solid grey;
+    border-radius: 10px;
 }
 
 #container {
@@ -20,14 +26,14 @@ footer {
     width: 100%;
     display: grid;
 
-
     grid-template-columns: .76fr 1fr 1fr .5fr .1fr;
-    grid-template-rows: auto 2.5fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr .2fr;
     grid-template-areas:
 			"menu header header header ."
             "menu big-article big-article sidebar ."
 			"menu article1 article2 sidebar ."
-            "menu footer footer footer .";
+            "menu footer footer footer ."
+            "menu . . . .";
     gap: 2%;
 }
 
@@ -62,7 +68,13 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 10px;
 }
+
+section div {
+    font-family: Liberation-Mono, serif;
+}
+
 
 
 
