@@ -99,7 +99,7 @@ footer {
 }
 
 .inner-grid-big p {
-    padding: 5px;
+    padding: 25px;
 }
 
 .inner-grid-small {
@@ -123,7 +123,7 @@ footer {
 }
 
 .inner-grid-small p {
-    padding: 5px;
+    padding: 25px;
 }
 
 .p-text-first {
@@ -151,7 +151,7 @@ footer {
 }
 
 .inner-grid-small-cover p {
-    padding: 5px;
+    padding: 25px;
 }
 
 .article2 img {
@@ -183,8 +183,17 @@ aside {
             "fourth-content";
 }
 
+.padding-to-sidebar {
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
 .first-content {
     grid-area: first-content;
+}
+
+.first-content p {
+
 }
 
 .first-content-img {
@@ -222,6 +231,14 @@ aside {
 .fourth-content {
     grid-area: fourth-content;
 }
+
+
+
+
+
+
+
+
 
 
 
