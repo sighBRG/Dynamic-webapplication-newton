@@ -18,6 +18,7 @@ header,
 section,
 aside,
 footer {
+    font-family: Liberation-Mono, serif;
     hyphens: auto;
 }
 
@@ -78,10 +79,6 @@ footer {
     margin-right: auto;
     width: 100%;
     border-radius: 10px;
-}
-
-section div {
-    font-family: Liberation-Mono, serif;
 }
 
 .inner-grid-big {
@@ -176,18 +173,55 @@ section div {
     grid-area: p-text-big;
 }
 
-.writer-credits {
-    grid-area: writer-credits;
-    margin-left: 30%;
-
+aside {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "first-content"
+            "second-content"
+            "third-content"
+            "fourth-content";
 }
 
-.article2 .writer-credits {
-    float: bottom;
-    margin-left: 70%;
-
+.first-content {
+    grid-area: first-content;
 }
 
+.first-content-img {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.second-content {
+    grid-area: second-content;
+}
+
+.middle-content-img {
+    border-radius: 0 0 0 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 0;
+    border-right: 0;
+
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.third-content {
+    grid-area: third-content;
+}
+
+.fourth-content {
+    grid-area: fourth-content;
+}
 
 
 
