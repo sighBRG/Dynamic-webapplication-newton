@@ -154,11 +154,10 @@ footer {
 
 .inner-grid-small-cover {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
             "small-article-img-cover"
-            "p-text-big"
-            "writer-credits";
+            "p-text-big";
 }
 
 .inner-grid-small-cover p {
@@ -361,47 +360,84 @@ aside {
         gap: 2%;
     }
 
+    .inner-grid-small {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+                "small-article-img p-text-first"
+                "p-text-second p-text-second";
+        grid-gap: 0;
+    }
+
+    .inner-grid-small p {
+        font-size: 20px;
+    }
 
 
+    .article1 img {
+        height: 100%;
+        border-left: 0;
+        border-right: 4px solid transparent;
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
 
+    .add-margin-top {
+        margin-top: 0;
+    }
+
+    .inner-grid-big {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+    }
+    .desktop-p {
+        font-size: 20px;
+    }
+
+    .p-text-big {
+        font-size: 20px;
+    }
 }
 
-@media only screen and (max-width: 960px) {
-    body {
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.15fr 0.1fr 1fr;
-        grid-template-areas:
+
+    @media only screen and (max-width: 960px) {
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.15fr 0.1fr 1fr;
+            grid-template-areas:
             "menu"
             "intro"
             "announcements";
-    }
+        }
 
-    #navTag1 {
-        grid-area: navTag1;
-    }
+        #navTag1 {
+            grid-area: navTag1;
+        }
 
-    #navTag2 {
-        grid-area: navTag2;
-    }
+        #navTag2 {
+            grid-area: navTag2;
+        }
 
-    #navTag3 {
-        grid-area: navTag3;
-    }
+        #navTag3 {
+            grid-area: navTag3;
+        }
 
-    #contents-news {
-        grid-area: contents-news;
-        margin-left: -10%;
-    }
+        #contents-news {
+            grid-area: contents-news;
+            margin-left: -10%;
+        }
 
-    #contents-developers {
-        grid-area: contents-developers;
-        margin-left: -10%;
-    }
+        #contents-developers {
+            grid-area: contents-developers;
+            margin-left: -10%;
+        }
 
-    #contents-about {
-        grid-area: contents-about;
-        margin-left: -10%;
+        #contents-about {
+            grid-area: contents-about;
+            margin-left: -10%;
+        }
     }
-}
