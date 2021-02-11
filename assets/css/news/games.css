@@ -38,7 +38,7 @@ footer {
     display: grid;
 
     grid-template-columns: .76fr 1fr 1fr .5fr .1fr;
-    grid-template-rows: auto auto 2fr 1fr .2fr;
+    grid-template-rows: auto auto 2fr .5fr .2fr;
     grid-template-areas:
 			"menu header header header ."
             "menu big-article big-article sidebar ."
@@ -236,10 +236,23 @@ aside {
     grid-area: fourth-content;
 }
 
+.stretched-gif {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "area-1 area-2";
+    display: inline-block;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+}
 
 
+.area-1 {
+    grid-area: area-1;
+}
 
-
+.area-2 {
+    grid-area: area-2;
+}
 
 
 
