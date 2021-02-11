@@ -20,6 +20,7 @@ aside,
 footer {
     font-family: Liberation-Mono, serif;
     hyphens: auto;
+    font-size: 15px;
 }
 
 .borders {
@@ -132,9 +133,12 @@ footer {
     margin-left: 3px;
 }
 
+.add-margin-top {
+    margin-top: -60px;
+}
+
 .p-text-second {
     grid-area: p-text-second;
-    margin-top: -20px;
 }
 
 .small-article-img {
