@@ -407,7 +407,7 @@ aside {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 2fr 1fr .1fr;
-        grid-template-rows: .1fr .1fr 1fr .5fr .5fr .1fr;
+        grid-template-rows: 0fr .1fr 1fr .5fr .5fr .1fr;
         grid-template-areas:
             "menu menu menu"
             "header header header"
@@ -423,6 +423,7 @@ aside {
 
     .inner-grid-small .p-text-first {
         margin-top: 0;
+        font-size: 15px;
     }
 
     .inner-grid-small .p-text-second {
