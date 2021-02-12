@@ -77,6 +77,28 @@ ul a {
         word-break: keep-all;
     }
 
+    #navTag1{
+        grid-area: navTag1;
+    }
+    #navTag2{
+        grid-area: navTag2;
+    }
+    #navTag3{
+        grid-area: navTag3;
+    }
+
+    #contents-news{
+        grid-area: contents-news;
+    }
+
+    #contents-developers{
+        grid-area: contents-developers;
+    }
+
+    #contents-about{
+        grid-area: contents-about;
+    }
+
     nav a {
         display: inline-block;
         margin: 5%;
