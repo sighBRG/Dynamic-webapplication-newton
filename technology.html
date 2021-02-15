@@ -1,242 +1,141 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/news/technology.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?famil
-y=Montserrat:wght@400;500;600;700&family=Raleway:wght
-@300;400;500;700;900&display=swap" rel="stylesheet">
-    <!---fontawesome-->
-    <script src="https://kit.fontawesome.com/e38979c150.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/menu/menu-bar.css">
+    <title>TECHNEWS</title>
 </head>
 
 <body>
-    <header>
-        <div class="navigation-container">
-            <div class="top-head">
-                <div class="web-name">
-                    <h1>TECHNEWS</h1>
-
-                </div>
-                <div class="ham-btn">
-                    <span>
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
-                <div class="times-btn">
-                    <span>
-                        <i class="fas fa-times"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="nav-bar" id="nav-bar">
-                <nav>
-                    <ul>
-                        <li><a href="#">News  Topics</a></li>
-                        <li><a href="#">Top  Stories</a></li>
-                        <li><a href="#">Latest  Stories</a></li>
-                    
-                    </ul>
-                </nav>
-
-            </div>
-            <div class="social-icons">
-                <ul>
-                    <li>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                <a class="menu-choice" id="navTag1" href="#"
+                    onclick="displayNavContents('contents-news', 'navTag1')">+IT-Nyheter</a>
+                <ul id="contents-news">
+                    <a class="menu-choice" href="finance.html">Finans</a>
+                    <a class="menu-choice" href="games.html">Spel</a>
+                    <a class="menu-choice" href="technews.html">Technologi</a>
+                    <a class="menu-choice" href="jobs.html">Jobbannonser</a>
                 </ul>
-
-            </div>
-
+                <a class="menu-choice" id="navTag2" href="#"
+                    onclick="displayNavContents('contents-developers', 'navTag2')">+Utvecklarna</a>
+                <ul id="contents-developers">
+                    <a class="menu-choice" href="DannyKalosPortfolio.html">Danny Kalos</a>
+                    <a class="menu-choice" href="johanlind.html">Johan Lind</a>
+                    <a class="menu-choice" href="stefanmichal.html">Stefan Michal</a>
+                    <a class="menu-choice" href="tadevos.html">Tadevos Eliasyan</a>
+                </ul>
+                <a class="menu-choice" id="navTag3" href="#"
+                    onclick="displayNavContents('contents-about', 'navTag3')">+Om
+                    hemsidan</a>
+                <ul id="contents-about">
+                    <a class="menu-choice" href="#">Hur?</a>
+                    <a class="menu-choice" href="#">Varför?</a>
+                    <a class="menu-choice" href="#">Skolan</a>
+                </ul>
+            </nav>
         </div>
-    </header>
-    <section class="banner">
-        <div class="banner-main-content">
-            <h2>LATEST TECHNOLOGY NEWS </h2>
-            <h3>NEWS PORTAL</h3>
-           
-            <div class="current-news-head">
-                <h3>Your Ring doorbell can now have
-                     Alexa greet visitors, take a message
-                     <span> Amanda Kooser </span></h3>
-                <h3>Ikea shows off its new lineup of 
-                    furniture and gear for gamers<span> 
-                        Alison DeNisco Rayome</span></h3>
-                <h3>Best graphics card for gamers and 
-                    creatives in 2021<span> Lori Grunin</span></h3>
-                <h3>Experience synesthesia: Google tool lets
-                     you 'hear' colors and shapes<span> Leslie Katz</span></h3>
+        <header class="header">
+            <h1>TECHNEWS</h1>
 
-            </div>
-        </div>
+        </header>
+        <section class="article">
+            <div>
+                <h1>Computer says go: Taking orders from an AI boss</h1>
+                <h3>If your first thought upon reading that sentence was "well it would be an improvement on my current
+                    human one," you wouldn't be alone.
 
-        <div class="banner-sub-content">
-            <dav class="hot-topic">
-                <img src="assets/images/technologye-news/p12.jpg" alt="">
-                <div class="hot-topic-content">
-                    <h2>NASA Juno spacecraft shows off a 
-                        gorgeously glam side of Jupiter</h2>
-                    <h3>NEWS TOPIC</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Tempore vitae itaque velit
-                        ut culpa tenetur?</p>
-                    <a href="#">Read More</a>
+                    After all, an artificial intelligence (AI) software system might be better able to organise the
+                    staff rota without messing up your holidays.
 
-                </div>
-            </dav>
-            <dav class="hot-topic">
-                <img src="assets/images/technologye-news/p14.jpg" alt="">
-                <div class="hot-topic-content">
-                    <h2>Clubhouse: What you want to
-                         know about the invite-only audio app</h2>
-                    <h3>NEWS TOPIC</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Tempore vitae itaque velit
-                        ut culpa tenetur?</p>
-                    <a href="#">Read More</a>
+                    And getting some unbiased feedback from a line manager who can't be accused of having it in for you
+                    or of favouring other staff could make a pleasant change.
 
-                </div>
-            </dav>
-            
+                    However, for those of us who have seen the Terminator movies rather too often, the thought of a
+                    computer, or robot, bossing you around is also bound to raise fears that the machines are in danger
+                    of taking over.
 
-        </div>
+                    Yet this ignores the fact that we already spend a lot of time obeying machines, and we don't even
+                    think about it, let alone worry.
 
-    </section>
-    <hr>
-    <main>
-        <section class="main-container-left">
-            <h2>Top Stories</h2>
-            <div class="container-top-left">
-                <article>
-                    <img src="assets/images/technologye-news/p3.jpg">
-                    <div>
-                        <h3>
-                            Nintendo Switch restock update: Get the latest
-                             inventory news for Amazon, Best Buy and Walmart
-                        </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ab aliquam nisi eos obcaecati in
-                            sapiente quidem aliquid architecto saepe
-                            nesciunt blanditiis molestiae sit expedita neque
-                            autem deleniti, earum non pariatur!</p>
-                        <a href="#">Read More<span>>></span></a>
-                    </div>
-                </article>
-            </div>
-            <div class="container-bottom-left">
-                <article>
-                    <img src="assets/images/technologye-news/p17.jpg">
-                    <div>
-                        <h3>Your Ring doorbell can now have Alexa
-                             greet visitors, take a message</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Voluptatibus, eveniet,
-                            velit illum molestiae ullam pariatur iure
-                            fugiat ab explicabo nostrum facilis accusamus.
-                            Ipsum officiis minus, totam quod ullam assumenda
-                            dolores!
-                        </p>
-                        <a href="#">Read More<span>>></span></a>
-                    </div>
-                </article>
-                <article>
-                    <img src="assets/images/technologye-news/p5.jpg">
-                    <div>
-                        <h3>Microsoft Word's Dark Mode brings on even more darkness </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Voluptatibus, eveniet,
-                            velit illum molestiae ullam pariatur iure
-                            fugiat ab explicabo nostrum facilis accusamus.
-                            Ipsum officiis minus, totam quod ullam assumenda
-                            dolores!
-                        </p>
-                        <a href="#">Read More<span>>></span></a>
-                    </div>
-                </article>
+                    Jeff Schwartz, a senior partner at accountancy group Deloitte, and a global adviser on the future of
+                    work, points to a simple everyday machine that we all obey unthinkingly.
+                    "A traffic light used to be a job, there used to be a person who would stand there directing the
+                    cars," he says. "But very clearly that is now a machine, and it is getting smarter - they are now
+                    putting AI into traffic lights [so they can best respond to traffic levels]."
+
+                    So it seems we are perfectly willing to take orders from a machine in some clearly defined
+                    situations.
+
+                    What has increasingly happened in recent years, however, is that more of us are already being
+                    ordered around by computers at work. And experts say that this is only set to increase.
+
+                    Take taxi firm Uber. There isn't a man or woman in the office giving out the jobs to the drivers. It
+                    is done automatically by the company's AI software system.
+
+                </h3>
 
             </div>
         </section>
-        <section class="main-container-right">
-            <h2>Latest Stories</h2>
-            <article>
-                <h4>Just in</h4>
-                <div>
-                    <h2>Facebook vs. Apple: Here's what you need
-                        to know about their privacy feud</h2>
-                    <p>Lorem ipsum dolor
-                        sit amet consectetur,
-                        adipisicing elit. Adipisci, velit!</p>
-                     <a href="#">Read More<span>>></span></a>   
-                </div>
-                <img src="assets/images/technologye-news/p16.jpg" alt="">
-            </article>
-            <article>
-                <h4>Just in</h4>
-                <div>
-                    <h2>Microsoft and Volkswagen will collaborate on
-                         self-driving car software</h2>
-                    <p>Lorem ipsum dolor
-                        sit amet consectetur,
-                        adipisicing elit. Adipisci, velit!</p>
-                     <a href="#">Read More<span>>></span></a>   
-                </div>
-                <img src="assets/images/technologye-news/p7.jpg" alt="">
-            </article>
-            <article>
-                <h4>Just in</h4>
-                <div>
-                    <h2>Best laptop under $500 for 2021 from HP, 
-                        Lenovo, Acer and more</h2>
-                    <p>Lorem ipsum dolor
-                        sit amet consectetur,
-                        adipisicing elit. Adipisci, velit!</p>
-                     <a href="#">Read More<span>>></span></a>   
-                </div>
-                <img src="assets/images/technologye-news/p8.jpg" alt="">
-            </article>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-container"> 
-            <div class="footer-left">
-                <h2>Technology News</h2>
-                <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. A maiores vitae
-                    consequatur laborum quia natus repellat
-                    culpa harum totam expedita quam obcaecati
-                    qui molestias doloremque id, ratione ullam.
-                    Dolore, ex!</p>
-            </div>
-            <div class="footer-right">
-                <h2>Newletter</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Veniam, voluptate.</p>
-                <div>
-                    <input type="text" placeholder="Email Address">
-                    <i class="fas fa-envelope"></i>
-                </div>
-            </div>
-        </div>
-        <p>Copyright &copy; 2021 All rights reserved I Tadevos</p>
-    
-    </footer>
+        <section class="article1">
+            <div>
+                <h1>Bitcoin investors: From buying a Bentley to losing it all</h1>
+                <h3>Bitcoin has soared to trade at an eye-watering $48,000 (£34,820), following the news that Tesla has
+                    bought $1.5bn of the crypto-currency.
 
-    <script src="assets/scripts/technology.js"></script>
+                    Enthusiasts will tell you it's the future of money - but investing in the notoriously volatile
+                    virtual currency can be a rollercoaster, and it's not without risk. The hunt for new coins, using
+                    powerful computers, is also causing a surge in energy demand - which is not so good for the
+                    environment.</h3>
+            </div>
+        </section>
+        <section class="article2">
+            <div>
+                <h1>Mercedes emergency call bug: Carmaker recalls vehicles</h1>
+                <h3>
+                    Mercedes-Benz is recalling more than one million cars over a safety defect with the cars' emergency
+                    call system.
+
+                    The problem is with the cars' eCall feature, which alerts emergency services of an accident and
+                    relays a vehicle's location to them.
+
+                    But a fault means it is possible that the wrong location could be sent.
+
+                    The problem affects 1,292,258 cars in the United States, and the company says it is preparing a fix
+                    for customers in other countries too.
+
+                </h3>
+            </div>
+        </section>
+        
+        <section class="footer">
+            <div>
+                <h1>Robots deployed at A68A mega-iceberg remnants</h1>
+                <h3>
+                    UK scientists have arrived at the remains of what was once the biggest iceberg in the world to
+                    investigate their impacts on the environment.
+
+                    A68A, which for a long time had an area equal to a small country, gradually fragmented after
+                    drifting away from Antarctica into the South Atlantic.
+
+                    The RSS James Cook approached the biggest remaining segment on Sunday.
+
+                    It deployed a robotic glider that will measure seawater salinity, temperature and chlorophyll close
+                    to the ice.
+
+                    This is information that will tell the scientists how the still significant blocks could be
+                    affecting local marine life.
+                </h3>
+            </div>
+        </section>
+
+    </div>
 </body>
-
+<script src="assets/scripts/menu/menu-bar.js"></script>
 
 </html>
