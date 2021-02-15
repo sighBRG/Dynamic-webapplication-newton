@@ -81,6 +81,10 @@ ul a{
     padding-bottom: 5%;
 } */
 
+.pagination{
+    padding-bottom: 10%;
+}
+
 
 .post-announcement{
     grid-area: post-announcement;
