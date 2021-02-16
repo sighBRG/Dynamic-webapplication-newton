@@ -47,35 +47,42 @@ h5 {
 
 #maingrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(7, auto);
   grid-template-areas:
-    "topimage topimage"
-    "quote quote"
-    "contact workexperience"
-    "education stack"
-    "bottomimage bottomimage";
+    "topimage"
+    "quote"
+    "contact"
+    "stack"
+    "workexperience"
+    "education"
+    "bottomimage";
   gap: 2%;
   align-self: center;
   justify-items: center;
 }
 
 .topimage {
-  display: flexbox;
+  display: flex;
   grid-area: topimage;
   align-self: center;
+  max-height: 200px;
+  max-width: 200px;
 }
 
 .bottomimage {
   display: flexbox;
   grid-area: bottomimage;
   align-self: center;
+  max-width: 200px;
+
 }
 
 .quote {
   display: flexbox;
   grid-area: quote;
-  align-self: center;
+  max-width: 400px;
+  align-self: center;  
 }
 
 .contact {
@@ -153,7 +160,7 @@ h5 {
   .quote-text {
     color: white !important;
     text-align: center;
-    font-size: 42px;
+    font-size: 24px;
   }
  
   .flex-container-picture-top {
@@ -218,6 +225,7 @@ h5 {
 
   .flex-container-right {
     align-self: flex-end;
+    max-width: 100px;
   }
 
   .flex-container-right img{
@@ -225,11 +233,12 @@ h5 {
     min-width: 25%;
     max-height: 200px;
     align-self: flex-end;
+    padding-bottom: 50px;
   }
 
   .flex-container-picture {
     max-height: 200px;
-    max-width: 140px;
+    max-width: 150px;
     padding: 1rem;
     flex-wrap: wrap;
     align-self: center;
@@ -269,25 +278,8 @@ h5 {
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1800px) {
-    #maingrid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(5, auto);
-      grid-template-areas:
-        "topimage topimage"
-        "quote quote"
-        "contact workexperience"
-        "education stack"
-        "bottomimage bottomimage";
-      gap: 2%;
-      align-self: center;
-      align-content: center;
-      align-items: center;
-    }
-}
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 900px) {
     #maingrid {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
