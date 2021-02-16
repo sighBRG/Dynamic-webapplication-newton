@@ -7,3 +7,26 @@
 //         });
 //     }
 // }
+
+
+let ads = document.getElementsByClassName("inner-grid-sidebar")[0];
+let imgDiv = ads.getElementsByTagName("div");
+
+function randomizeAds() {
+
+    let div = imgDiv[0];
+    let img = ads.getElementsByTagName("img");
+
+    imgDiv[0].remove();
+    ads.append(div);
+    for (let i = 0; i < img.length; i++) {
+        if (i === 0) {
+            $(imgDiv[0]).delay(4000).slideUp(1000);
+        } else {
+            $(imgDiv[0]).fadeIn();
+        }
+    }
+}
+
+setInterval(randomizeAds, 5000);
+
