@@ -19,12 +19,11 @@ function randomizeAds() {
 
     imgDiv[0].remove();
     ads.append(div);
-
     for (let i = 0; i < img.length; i++) {
         if (i === 0) {
-            $(imgDiv[0]).delay(3000).fadeOut(2000);
+            $(imgDiv[0]).delay(4000).slideUp(1000);
         } else {
-            $(imgDiv[0]).fadeIn(750);
+            $(imgDiv[0]).fadeIn();
         }
     }
 }
