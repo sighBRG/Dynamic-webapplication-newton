@@ -26,10 +26,48 @@ footer {
 .borders {
     border: 4px solid transparent;
     border-radius: 15px;
-    background-image: linear-gradient(white, white), linear-gradient(to bottom right, #92DCE5, #333333);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 0 3px 15px #333333, inset 0 0 15px #92DCE5;
+}
+
+.border-animation {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(0deg, #ffffff, #ffffff);
+    box-shadow: 1px 5px 15px rgb(0, 0, 0);
+}
+
+.border-animation:before,
+.border-animation:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #92DCE5, #2980b9);
+    background-size: 400%;
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    border-radius: 15px;
+}
+@keyframes animate {
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+.border-animation:after {
+    filter: blur(20%);
 }
 
 #container {
@@ -493,12 +531,16 @@ aside {
         grid-template-columns: 1fr;
         grid-template-areas: "area-1";
         width: 100%;
-        height: 200%;
+        height: 100%;
         border-radius: 0;
     }
 
     .area-2 {
         display: none;
+    }
+
+    .area-1 {
+        border-radius: 10px;
     }
 
 }
