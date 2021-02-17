@@ -50,10 +50,9 @@ function carouselAds() {
     let div = imgDiv[0];
     imgDiv[0].remove();
     ads.append(div);
-    
+
     $(imgDiv[0]).delay(4000).slideUp(1000);
     $(imgDiv[0]).fadeIn();
-
 }
 
 queueFirstAd();
