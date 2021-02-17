@@ -41,7 +41,7 @@ function displayHandler(span) {
 
 firstSpan.style.border = "3px solid #3498db";
 
-function randomizeAds() {
+function carouselAds() {
 
     let div = imgDiv[0];
     imgDiv[0].remove();
@@ -57,5 +57,5 @@ function queueFirstAd() {
 }
 
 
-setInterval(randomizeAds, 5000);
+setInterval(carouselAds, 5000);
 queueFirstAd();
