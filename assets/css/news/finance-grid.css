@@ -75,7 +75,7 @@ footer {
     background-color: #333333;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 960px) {
     #maingrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
