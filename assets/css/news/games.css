@@ -91,7 +91,7 @@ footer {
     grid-template-areas:
 			"menu header header header ."
             "menu big-article big-article sidebar ."
-			"menu article1 article2 sidebar ."
+			"menu article1 article2 article2 ."
             "menu footer footer footer ."
             "menu . . . .";
     gap: 2%;
@@ -140,12 +140,12 @@ footer {
 .inner-grid-big img {
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
-    border-right: 4px solid transparent;
-    border-bottom: 0;
+    max-height: 90%;
+    border-bottom: 4px solid transparent;
+    border-right: 0;
     border-left: 0;
     border-top: 0;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .inner-grid-big p {
@@ -258,22 +258,6 @@ aside {
     grid-area: first-content;
 }
 
-/*.inner-grid-sidebar h1 {*/
-/*    text-align: center;*/
-/*    font-family: Liberation-Mono, serif;*/
-/*    text-transform: uppercase;*/
-/*    font-weight: 1500;*/
-/*    color: #B0E0EC;*/
-/*    text-shadow: 1px 1px 1px #919191,*/
-/*         1px 2px 1px #919191,*/
-/*         1px 3px 1px #919191,*/
-/*         1px 4px 1px #919191,*/
-/*    1px 10px 6px rgba(16, 16, 16, 0.4),*/
-/*    1px 19px 25px rgba(16, 16, 16, 0.2),*/
-/*    1px 27px 35px rgba(16, 16, 16, 0.2),*/
-/*    1px 45px 55px rgba(16, 16, 16, 0.4);*/
-/*}*/
-
 .ad-animation {
     display: flex;
     justify-content: center;
@@ -298,8 +282,7 @@ aside {
 }
 
 @keyframes animated {
-    0%, 10%, 100%
-    {
+    0%, 10%, 100% {
         width: 0;
     }
     70%, 90% {
@@ -333,7 +316,7 @@ aside {
 
     object-fit: cover;
     width: 100%;
-    height: 150px;
+    height: 135px;
 }
 
 .third-content {
@@ -400,13 +383,55 @@ aside {
     border-bottom-left-radius: 0;
 }
 
+.desktop-p {
+    padding: 20px;
+}
+
+.pagination-wrapper {
+    grid-area: pagination-area;
+}
+
+.pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination span {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.pagination span.active {
+    border: 3px solid #92DCE5;
+}
+
+.pagination span:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #000000;
+    border-radius: 50%;
+}
+
 @media only screen and (min-width: 1920px) {
     .inner-grid-big {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-                    "desktop-media desktop-p";
+                    "desktop-media";
         grid-gap: 0;
+    }
+
+    .pagination-wrapper {
+        height: 40px;
     }
 }
 
@@ -416,9 +441,9 @@ aside {
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-areas:
           "menu header header header header ."
-          "menu big-article big-article sidebar sidebar ."
+          "menu big-article big-article big-article big-article ."
           "menu article1 article1 sidebar sidebar ."
-          "menu article2 article2 article2 article2 ."
+          "menu article2 article2 sidebar sidebar ."
           "menu footer footer footer footer ."
           "menu . . . . .";
     }
@@ -426,10 +451,10 @@ aside {
     .inner-grid-big {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr;
+        grid-template-rows: 1fr .05fr;
         grid-template-areas:
                     "desktop-media"
-                    "desktop-p";
+                    "pagination-wrapper";
         grid-gap: 0;
     }
 
@@ -447,24 +472,14 @@ aside {
     }
 
     .inner-grid-big img {
-        border-radius: 0 10px 0 0;
+        height: 60%;
+        border-radius: 10px 10px 0 0;
         border-right: 0;
         border-bottom: 4px solid transparent;
-        border-left: 4px solid transparent;
     }
 
     .desktop-p {
         grid-area: desktop-p;
-    }
-
-    .desktop-p1 {
-        grid-area: desktop-p1;
-    }
-
-    .inner-grid-big img {
-        height: 100%;
-        border-left: 0;
-        border-top-left-radius: 10px;
     }
 
     .inner-grid-small {
@@ -484,13 +499,15 @@ aside {
     }
 
     .middle-content-img {
-        height: 190px;
+        height: 150px;
     }
 
+    .first-content-img {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 1440px) {
-
     #container {
         margin: 0 auto;
         width: 100%;
@@ -506,6 +523,14 @@ aside {
             "menu footer footer ."
             "menu . . .";
         gap: 2%;
+    }
+
+    .inner-grid-big {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .13fr;
+        grid-template-areas:
+                "desktop-media"
+                "pagination-wrapper";
     }
 
     .fifth-content {
@@ -549,12 +574,6 @@ aside {
 
     .inner-grid-small p {
         margin-top: 0;
-    }
-
-    .inner-grid-big {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 0;
     }
 
     .padding-to-sidebar {
@@ -661,5 +680,14 @@ aside {
 
     .ad-animation {
         font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .inner-grid-big {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .4fr;
+        grid-template-areas: "desktop-media";
     }
 }
