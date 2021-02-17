@@ -8,6 +8,11 @@
     src: url("../../fonts/LiberationMono-Regular.ttf");
 }
 
+@font-face {
+    font-family: Didot;
+    src: url("../../fonts/Didot-Regular.ttf");
+}
+
 body {
     background: #fafafa;
     padding: 0;
@@ -686,7 +691,7 @@ aside {
     .inner-grid-big {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr .2fr;
+        grid-template-rows: 1fr .4fr;
         grid-template-areas: "desktop-media";
     }
 }

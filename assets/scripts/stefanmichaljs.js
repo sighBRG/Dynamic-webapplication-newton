@@ -39,21 +39,23 @@ function displayHandler(span) {
     images[span].style.display = "grid";
 }
 
+firstSpan.style.border = "3px solid #3498db";
+
 function randomizeAds() {
 
     let div = imgDiv[0];
-    let img = ads.getElementsByTagName("img");
-
     imgDiv[0].remove();
     ads.append(div);
 
-    for (let i = 0; i < img.length; i++) {
-        if (i === 0) {
-            $(imgDiv[0]).delay(4000).slideUp(1000);
-        } else {
-            $(imgDiv[0]).fadeIn();
-        }
-    }
+    $(imgDiv[0]).delay(4000).slideUp(1000);
+    $(imgDiv[0]).fadeIn();
 }
 
+function queueFirstAd() {
+    $(imgDiv[0]).delay(4000).slideUp(1000);
+    $(imgDiv[0]).fadeIn();
+}
+
+
 setInterval(randomizeAds, 5000);
+queueFirstAd();
