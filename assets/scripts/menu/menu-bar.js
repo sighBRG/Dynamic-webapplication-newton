@@ -1,5 +1,5 @@
-let screenHeight = screen.availHeight;
-document.getElementsByTagName("body")[0].style.minHeight = screenHeight - 10 + "px";
+// let screenHeight = screen.availHeight;
+// document.getElementsByTagName("body")[0].style.minHeight = screenHeight - 10 + "px";
 
 function displayNavContents(ul, section) {
     event.preventDefault();

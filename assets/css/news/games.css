@@ -8,6 +8,11 @@
     src: url("../../fonts/LiberationMono-Regular.ttf");
 }
 
+@font-face {
+    font-family: Didot;
+    src: url("../../fonts/Didot-Regular.ttf");
+}
+
 body {
     background: #fafafa;
     padding: 0;

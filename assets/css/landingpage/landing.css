@@ -1,6 +1,6 @@
 @font-face {
     font-family: Didot Regular;
-    src: url("../../fonts/Didot Regular.ttf");
+    src: url("../../fonts/Didot-Regular.ttf");
 }
 
 .door {
@@ -30,6 +30,7 @@
 }
 
 input[type=checkbox] {
+    -moz-appearance:initial;
     position: absolute;
     cursor: pointer;
     margin-left: 41%;
