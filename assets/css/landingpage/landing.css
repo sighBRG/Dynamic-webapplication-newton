@@ -23,20 +23,23 @@
 .door-reveal {
     position: absolute;
     z-index: 1;
-    width: 100%;
-    height: 56%;
-
-    margin-top: 10%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 35%;
 }
 
 input[type=checkbox] {
     -moz-appearance:initial;
     position: absolute;
     cursor: pointer;
-    margin-left: 41%;
-    margin-top: 10%;
-    width: 17%;
-    height: 50%;
+    margin: auto;
+    height: 30%;
+    width: 15%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     z-index: 100;
     opacity: 0;
 }
@@ -50,16 +53,16 @@ input[type=checkbox]:checked ~ div.door-section-right {
     transform: translateX(0);
 }
 
-input[type=checkbox]:not(:checked){
+input[type=checkbox]:not(:checked) {
     pointer-events: none;
 }
 
 .right-door {
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 .left-door {
-    margin-top: 20%;
+    margin-top: 30%;
     float: right;
 }
 
@@ -74,12 +77,189 @@ input[type=checkbox]:not(:checked){
 .enter {
     color: black;
     text-align: center;
-    margin-top: 8%;
     font-size: 100px;
     text-decoration: none;
-    font-family: "Didot Regular", serif;
+    font-family: "Didot-Regular", serif;
 }
+
 .enter a {
     z-index: 95;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1900px) {
+    input[type=checkbox] {
+        width: 12%;
+        top: -10%;
+    }
+
+    .enter {
+        margin-top: 3%;
+    }
+
+    .left-door {
+        margin-top: 30%;
+    }
+
+    .right-door {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    input[type=checkbox] {
+        width: 15%;
+        top: 5%;
+    }
+
+    .door-section-left {
+        transform: translateX(-20%);
+    }
+
+    .door-section-right {
+        transform: translateX(20%);
+    }
+
+    .enter {
+        margin-top: 10%;
+    }
+
+    .door-reveal {
+        top: 30%
+    }
+
+    .right-door {
+        margin-top: 40%;
+    }
+
+    .left-door {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .door-section-left {
+        transform: translateX(-20%);
+    }
+
+    .door-section-right {
+        transform: translateX(20%);
+    }
+
+    input[type=checkbox] {
+        width: 25%;
+        top: 0;
+    }
+
+    .enter {
+        margin-top: 10%;
+    }
+
+    .right-door {
+        margin-top: 40%;
+    }
+
+    .left-door {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    input[type=checkbox] {
+        width: 30%;
+        top: -12%;
+    }
+
+    .door-section-left {
+        transform: translateX(-25%);
+    }
+
+    .door-section-right {
+        transform: translateX(25%);
+    }
+
+    .right-door {
+        margin-top: 40%;
+    }
+
+    .left-door {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .door-section-left {
+        transform: translateX(-30%);
+    }
+
+    .door-section-right {
+        transform: translateX(30%);
+    }
+
+    .enter {
+        margin-top: 5%;
+    }
+
+    .right-door {
+        margin-top: 50%;
+    }
+
+    .left-door {
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .door-section-left {
+        transform: translateX(-35%);
+    }
+
+    .door-section-right {
+        transform: translateX(35%);
+    }
+
+    input[type=checkbox] {
+        width: 45%;
+    }
+
+    .enter {
+        margin-top: 25%;
+    }
+
+    .left-door {
+        margin-top: 80%;
+    }
+
+    .right-door {
+        margin-top: 80%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .door-section-left {
+        transform: translateX(-40%);
+    }
+
+    .door-section-right {
+        transform: translateX(40%);
+    }
+    input[type=checkbox] {
+        width: 45%;
+        top: 10%
+    }
+
+    .enter {
+        margin-top: 35%;
+        font-size: 60px;
+    }
+
+    .left-door {
+        margin-top: 100%;
+    }
+
+    .right-door {
+        margin-top: 100%;
+    }
+
 }
