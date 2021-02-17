@@ -106,14 +106,11 @@ footer {
     }
     #contents-news {
         grid-area: contents-news;
-        margin-left: -10%;
     }
     #contents-developers {
         grid-area: contents-developers;
-        margin-left: -10%;
     }
     #contents-about {
         grid-area: contents-about;
-        margin-left: -10%;
     }
 }
