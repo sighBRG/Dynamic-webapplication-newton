@@ -38,7 +38,7 @@ input[type=checkbox] {
     width: 15%;
     left: 0;
     right: 0;
-    top: 0;
+    top: -15%;
     bottom: 0;
     z-index: 100;
     opacity: 0;
@@ -87,10 +87,10 @@ input[type=checkbox]:not(:checked) {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1920px) {
     input[type=checkbox] {
         width: 12%;
-        top: -10%;
+        top: -15%;
     }
 
     .enter {

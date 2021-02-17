@@ -505,10 +505,6 @@ aside {
     .first-content-img {
         height: 150px;
     }
-
-    .big-article-img {
-        height: 50%;
-    }
 }
 
 @media screen and (max-width: 1440px) {

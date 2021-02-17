@@ -41,21 +41,21 @@ function displayHandler(span) {
 
 firstSpan.style.border = "3px solid #3498db";
 
-function randomizeAds() {
-
-    let div = imgDiv[0];
-    imgDiv[0].remove();
-    ads.append(div);
-
-    $(imgDiv[0]).delay(4000).slideUp(1000);
-    $(imgDiv[0]).fadeIn();
-}
-
 function queueFirstAd() {
     $(imgDiv[0]).delay(4000).slideUp(1000);
     $(imgDiv[0]).fadeIn();
 }
 
+function carouselAds() {
 
-setInterval(randomizeAds, 5000);
+    $(imgDiv[0]).delay(4000).slideUp(1000);
+    $(imgDiv[0]).fadeIn();
+
+    let div = imgDiv[0];
+    imgDiv[0].remove();
+    ads.append(div);
+}
+
 queueFirstAd();
+setInterval(carouselAds, 5000);
+
