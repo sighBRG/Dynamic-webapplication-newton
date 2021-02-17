@@ -26,7 +26,7 @@
     margin: auto;
     left: 0;
     right: 0;
-    top: 35%;
+    top: 25%;
 }
 
 input[type=checkbox] {
@@ -57,11 +57,11 @@ input[type=checkbox]:not(:checked) {
 }
 
 .right-door {
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .left-door {
-    margin-top: 30%;
+    margin-top: 20%;
     float: right;
 }
 
@@ -93,22 +93,22 @@ input[type=checkbox]:not(:checked) {
     }
 
     .enter {
-        margin-top: 3%;
+        margin-top: 5%;
     }
 
     .left-door {
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
     .right-door {
-        margin-top: 30%;
+        margin-top: 20%;
     }
 }
 
 @media only screen and (max-width: 1700px) {
     input[type=checkbox] {
         width: 15%;
-        top: 5%;
+        top: -25%;
     }
 
     .door-section-left {
@@ -120,19 +120,15 @@ input[type=checkbox]:not(:checked) {
     }
 
     .enter {
-        margin-top: 10%;
-    }
-
-    .door-reveal {
-        top: 30%
+        margin-top: 5%;
     }
 
     .right-door {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 
     .left-door {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 }
 
@@ -147,19 +143,19 @@ input[type=checkbox]:not(:checked) {
 
     input[type=checkbox] {
         width: 25%;
-        top: 0;
+        top: -25%;
     }
 
     .enter {
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .right-door {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 
     .left-door {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 }
 
@@ -167,7 +163,7 @@ input[type=checkbox]:not(:checked) {
 
     input[type=checkbox] {
         width: 30%;
-        top: -12%;
+        top: -30%;
     }
 
     .door-section-left {
@@ -179,15 +175,21 @@ input[type=checkbox]:not(:checked) {
     }
 
     .right-door {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 
     .left-door {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 }
 
 @media only screen and (max-width: 900px) {
+
+    input[type=checkbox] {
+        width: 30%;
+        top: -35%;
+    }
+
     .door-section-left {
         transform: translateX(-30%);
     }
@@ -197,15 +199,15 @@ input[type=checkbox]:not(:checked) {
     }
 
     .enter {
-        margin-top: 5%;
+        margin-top: 0;
     }
 
     .right-door {
-        margin-top: 50%;
+        margin-top: 20%;
     }
 
     .left-door {
-        margin-top: 50%;
+        margin-top: 20%;
     }
 }
 
@@ -222,16 +224,12 @@ input[type=checkbox]:not(:checked) {
         width: 45%;
     }
 
-    .enter {
-        margin-top: 25%;
-    }
-
     .left-door {
-        margin-top: 80%;
+        margin-top: 20%;
     }
 
     .right-door {
-        margin-top: 80%;
+        margin-top: 20%;
     }
 }
 
@@ -245,20 +243,19 @@ input[type=checkbox]:not(:checked) {
     }
     input[type=checkbox] {
         width: 45%;
-        top: 10%
+        top: -40%
     }
 
     .enter {
-        margin-top: 35%;
         font-size: 60px;
     }
 
     .left-door {
-        margin-top: 100%;
+        margin-top: 20%;
     }
 
     .right-door {
-        margin-top: 100%;
+        margin-top: 20%;
     }
 
 }
