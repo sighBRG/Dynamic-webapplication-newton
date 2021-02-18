@@ -28,7 +28,6 @@ fourthSpan.addEventListener("click", () => {
     fourthSpan.style.border = "3px solid #3498db";
 })
 
-
 function displayHandler(span) {
     for (let i = 0; i < articles.length; i++) {
         pagination[i].style.border = "none"
@@ -48,12 +47,12 @@ function queueFirstAd() {
 
 function carouselAds() {
 
-    $(imgDiv[0]).delay(4000).slideUp(1000);
-    $(imgDiv[0]).fadeIn();
-
     let div = imgDiv[0];
     imgDiv[0].remove();
     ads.append(div);
+
+    $(imgDiv[0]).delay(4000).slideUp(1000);
+    $(imgDiv[0]).fadeIn();
 }
 
 queueFirstAd();
