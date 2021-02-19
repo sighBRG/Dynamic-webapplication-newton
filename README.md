@@ -26,7 +26,7 @@ The chosen fonts above are there to convey confidence and trust.
 - [Link to the continously updated Mockup](https://www.figma.com/file/SaZtrz1WnpwcZ8cEXjVp1l/Dynamisk-webbapplikation?node-id=0%3A1)
 ## Tasks
 - Tasks are divided throughout the team.
-- All members work together to create the index.html "home".
+- All members work together to create the index.html "home" and the commun navigation bar.
 - Each member has an individual portfolio (CV) page to create. 
 - Each member are also given the task to create a news page with grid/flexbox. 
 ## Planning
