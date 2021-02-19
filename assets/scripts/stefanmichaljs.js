@@ -34,6 +34,8 @@ function displayHandler(span) {
         articles[i].style.display = "none";
         images[i].style.display = "none";
     }
+    $(articles[span]).fadeIn(1000);
+    $(images[span]).fadeIn(1000);
     articles[span].style.display = "grid";
     images[span].style.display = "grid";
 }
@@ -54,6 +56,10 @@ function carouselAds() {
     $(imgDiv[0]).delay(4000).slideUp(1000);
     $(imgDiv[0]).fadeIn();
 }
+
+
+
+
 
 queueFirstAd();
 setInterval(carouselAds, 5000);
