@@ -9,6 +9,8 @@ let secondSpan = document.getElementById("1");
 let thirdSpan = document.getElementById("2");
 let fourthSpan = document.getElementById("3");
 
+
+
 displayHandler(0);
 
 firstSpan.addEventListener("click", () => {
@@ -28,12 +30,16 @@ fourthSpan.addEventListener("click", () => {
     fourthSpan.style.border = "3px solid #3498db";
 })
 
+
+
 function displayHandler(span) {
     for (let i = 0; i < articles.length; i++) {
         pagination[i].style.border = "none"
         articles[i].style.display = "none";
         images[i].style.display = "none";
     }
+    $(articles[span]).fadeIn(1000);
+    $(images[span]).fadeIn(1000);
     articles[span].style.display = "grid";
     images[span].style.display = "grid";
 }
@@ -54,6 +60,10 @@ function carouselAds() {
     $(imgDiv[0]).delay(4000).slideUp(1000);
     $(imgDiv[0]).fadeIn();
 }
+
+
+
+
 
 queueFirstAd();
 setInterval(carouselAds, 5000);
