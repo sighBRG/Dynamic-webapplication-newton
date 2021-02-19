@@ -9,8 +9,6 @@ let secondSpan = document.getElementById("1");
 let thirdSpan = document.getElementById("2");
 let fourthSpan = document.getElementById("3");
 
-
-
 displayHandler(0);
 
 firstSpan.addEventListener("click", () => {
@@ -29,8 +27,6 @@ fourthSpan.addEventListener("click", () => {
     displayHandler(3);
     fourthSpan.style.border = "3px solid #3498db";
 })
-
-
 
 function displayHandler(span) {
     for (let i = 0; i < articles.length; i++) {
