@@ -54,9 +54,18 @@ nav {
     text-decoration: underline;
 }
 
+.menu-choice:active {
+    color: #604f6f;
+}
+
+
 .bold-and-big {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
+}
+
+.bold-and-big:hover {
+    color: #604f6f;
 }
 
 ul {
@@ -70,6 +79,7 @@ ul {
 ul a {
     word-break: keep-all;
     display: flex;
+    font-size: 1.2em;
 }
 
 .borders {
