@@ -57,10 +57,6 @@ function carouselAds() {
     $(imgDiv[0]).fadeIn();
 }
 
-
-
-
-
 queueFirstAd();
 setInterval(carouselAds, 5000);
 
